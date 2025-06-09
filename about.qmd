@@ -5,39 +5,29 @@ format:
     toc: false
 ---
 
-I am a PhD student in Carnegie Mellon's Statistics and Data Science department. Before that, I attended Pomona College in Claremont, California, where I graduated with a double major in mathematics and philosophy in Spring 2024. At Pomona, I worked primarily with Jo Hardin, conducting research in both statistical genomics and data science ethics pedagogy.
+I am a Ph.D. student in Carnegie Mellon's Statistics and Data Science department. Before that, I attended Pomona College in Claremont, California, where I graduated with a double major in mathematics and philosophy in Spring 2024. At Pomona, I primarily conducted research with [Jo Hardin](https://hardin47.netlify.app), working on projects in both statistical genomics and data science ethics pedagogy.
 
-Outside of research, I also really enjoy teaching. So far, I have been a graduate TA for 36-600:  Overview of Statistical Learning and Modeling, and a head TA for 36-226: Introduction to Statistical Inference at CMU. This summer, I will be TA for the Carnegie Mellon Sports Analytics Summer Camp and instruct some early lectures on data analysis in R. I am also a big data visualization nerd and try to spend some time creating a new one each week as part of TidyTuesday (a community activity put on by the *Data Science Learning Community*). In my free time, I like to run and was part of Pomona-Pitzer's Cross Country and Track and Field teams during my four years at Pomona.
+Outside of research, I really enjoy teaching. So far, I have been a graduate TA for two courses at CMU, and I will TA for the [Carnegie Mellon Sports Analytics Summer Camp](https://www.cmu.edu/dietrich/statistics-datascience/engagement/summer/cmsa-camp.html) and co-instruct some lectures on data analysis with R as part of [SURE 2025](https://36-sure.github.io/2025/) this summer. 
 
-Another primary interest of mine is philosophy, particularly (feminist) philosophy of science, ethics, and (social) epistemology. I hope to stay engaged in philosophy and, with that, work to understand the ethical dimensions of statistical technologies while completing my PhD at Carnegie Mellon.
+<!-- I am also a big data visualization nerd and try to spend some time creating a new one each week as part of TidyTuesday (a community activity put on by the *Data Science Learning Community*). In my free time, I like to run and was part of Pomona-Pitzer's Cross Country and Track and Field teams during my four years at Pomona. -->
 
-## Ongoing Research Projects
+Another primary interest of mine is philosophy, particularly (feminist) philosophy of science, ethics, and (social) epistemology. I hope to stay engaged in philosophy and, with that, work to understand the ethical dimensions of statistical technologies while completing my Ph.D. at Carnegie Mellon.
 
-**A shortlist of current research projects (as of May 2025):**
+## Current Research Projects (May 2025)
 
-- Predicting Avoidance Ties in Avoidance Networks Leveraging only the Positive Network between the Same Individuals and Basic Node-Level Characteristics (ADA project, in collaboration with [Nynke Niezink]() and Eva Jaspers)
+- Predicting Avoidance Ties in Avoidance Networks Leveraging only the Positive Network between the Same Individuals and Basic Node-Level Characteristics (Advanced Data Analysis project, in collaboration with [Nynke Niezink](https://www.stat.cmu.edu/~nynke/) and Eva Jaspers)
 
 - Selecting Chip-Seq Normalization Methods from the Perspective of their Technical Conditions (in collaboration with [Jo Hardin](https://hardin47.netlify.app) and Danae Schulz)
 
-    - Revise and Resubmit, 2025
+- Analyzing Statistics Students' Writing Before and After the Emergence of Large Language Models (in collaboration with my cohort-mate, [Erin Franke](https://efranke22.github.io/)) 
 
-- Analyzing Statistics Students' Writing Before and After the Emergence of Large Language Models (in collaboration with my cohort-mate, [Erin Franke](https://efranke22.github.io/))
-
-    - Presenting at the Research Satellite at USCOTS 2025
-
-- Teaching Data Cleaning and Wrangling with R's `data.table` Package (also in collaboration with my cohort-mate, [Erin Franke](https://efranke22.github.io/))
-
-    - Presenting at the Poster and Beyond Session at USCOTS 2025
+- Teaching Data Cleaning and Wrangling with the data.table R Package (also with [Erin Franke](https://efranke22.github.io/))
 
 ## Education
 
-{{< iconify zondicons:education size=xl >}} PhD in Statistics (in progress)
+{{< iconify zondicons:education size=xl >}} Ph.D. in Statistics (in progress); Carnegie Mellon University
 
-Carnegie Mellon University
-
-{{< iconify zondicons:education size=xl >}} BA in Mathematics and Philosophy (May 2024)
-
-Pomona College
+{{< iconify zondicons:education size=xl >}} B.A. in Mathematics and Philosophy (May 2024); Pomona College
 
 ## Contact
 

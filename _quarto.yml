@@ -12,7 +12,7 @@ website:
   
   
   navbar:
-    logo: "personal-website-hex-sticker.png"
+    #logo: "personal-website-hex-sticker.png"
     search: true
     right:
       - href: about.qmd
@@ -27,7 +27,7 @@ website:
         text: "CV"
     
   page-footer:
-    left: "Made by Sara Colando,<br>May 2024"
+    left: ""
     right:
       - icon: github
         href: https://github.com/scolando/personal-website

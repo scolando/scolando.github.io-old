@@ -116,14 +116,14 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "I am a PhD student in Carnegie Mellon’s Statistics and Data Science department. Before that, I attended Pomona College in Claremont, California, where I graduated with a double major in mathematics and philosophy in Spring 2024. At Pomona, I worked primarily with Jo Hardin, conducting research in both statistical genomics and data science ethics pedagogy.\nOutside of research, I also really enjoy teaching. So far, I have been a graduate TA for 36-600: Overview of Statistical Learning and Modeling, and a head TA for 36-226: Introduction to Statistical Inference at CMU. This summer, I will be TA for the Carnegie Mellon Sports Analytics Summer Camp and instruct some early lectures on data analysis in R. I am also a big data visualization nerd and try to spend some time creating a new one each week as part of TidyTuesday (a community activity put on by the Data Science Learning Community). In my free time, I like to run and was part of Pomona-Pitzer’s Cross Country and Track and Field teams during my four years at Pomona.\nAnother primary interest of mine is philosophy, particularly (feminist) philosophy of science, ethics, and (social) epistemology. I hope to stay engaged in philosophy and, with that, work to understand the ethical dimensions of statistical technologies while completing my PhD at Carnegie Mellon."
+    "text": "I am a Ph.D. student in Carnegie Mellon’s Statistics and Data Science department. Before that, I attended Pomona College in Claremont, California, where I graduated with a double major in mathematics and philosophy in Spring 2024. At Pomona, I primarily conducted research with Jo Hardin, working on projects in both statistical genomics and data science ethics pedagogy.\nOutside of research, I really enjoy teaching. So far, I have been a graduate TA for two courses at CMU, and I will TA for the Carnegie Mellon Sports Analytics Summer Camp and co-instruct some lectures on data analysis with R as part of SURE 2025 this summer.\nAnother primary interest of mine is philosophy, particularly (feminist) philosophy of science, ethics, and (social) epistemology. I hope to stay engaged in philosophy and, with that, work to understand the ethical dimensions of statistical technologies while completing my Ph.D. at Carnegie Mellon."
   },
   {
     "objectID": "about.html#education",
     "href": "about.html#education",
     "title": "About",
     "section": "Education",
-    "text": "Education\n PhD in Statistics (in progress)\nCarnegie Mellon University\n BA in Mathematics and Philosophy (May 2024)\nPomona College"
+    "text": "Education\n Ph.D. in Statistics (in progress); Carnegie Mellon University\n B.A. in Mathematics and Philosophy (May 2024); Pomona College"
   },
   {
     "objectID": "about.html#contact",
@@ -417,7 +417,7 @@
     "href": "about.html#ongoing-research-projects",
     "title": "About",
     "section": "Ongoing Research Projects",
-    "text": "Ongoing Research Projects\nA shortlist of current research projects (as of May 2025):\n\nPredicting Avoidance Ties in Avoidance Networks Leveraging only the Positive Network between the Same Individuals and Basic Node-Level Characteristics (ADA project, in collaboration with Nynke Niezink and Eva Jaspers)\nSelecting Chip-Seq Normalization Methods from the Perspective of their Technical Conditions (in collaboration with Jo Hardin and Danae Schulz)\n\nRevise and Resubmit, 2025\n\nAnalyzing Statistics Students’ Writing Before and After the Emergence of Large Language Models (in collaboration with my cohort-mate, Erin Franke)\n\nPresenting at the Research Satellite at USCOTS 2025\n\nTeaching Data Cleaning and Wrangling with R’s data.table Package (also in collaboration with my cohort-mate, Erin Franke)\n\nPresenting at the Poster and Beyond Session at USCOTS 2025"
+    "text": "Ongoing Research Projects\nA shortlist of current research projects (as of May 2025):\n\nPredicting Avoidance Ties in Avoidance Networks Leveraging only the Positive Network between the Same Individuals and Basic Node-Level Characteristics (ADA project, in collaboration with Nynke Niezink and Eva Jaspers)\nSelecting Chip-Seq Normalization Methods from the Perspective of their Technical Conditions (in collaboration with Jo Hardin and Danae Schulz)\nAnalyzing Statistics Students’ Writing Before and After the Emergence of Large Language Models (in collaboration with my cohort-mate, Erin Franke)\nTeaching Data Cleaning and Wrangling with R’s data.table Package (also in collaboration with my cohort-mate, Erin Franke)"
   },
   {
     "objectID": "about.html#ongoing-research-projects-as-of-may-2025",
@@ -425,5 +425,19 @@
     "title": "About",
     "section": "Ongoing Research Projects (as of May 2025)",
     "text": "Ongoing Research Projects (as of May 2025)\n\nPredicting Avoidance Ties in Avoidance Networks Leveraging only the Positive Network between the Same Individuals and Basic Node-Level Characteristics (in collaboration with Nynke Niezink and Eva Jaspers)\nSelecting Chip-Seq Normalization Methods from the Perspective of their Technical Conditions (in collaboration with Jo Hardin and Danae Schulz)\n\nRevise and Resubmit, 2025\n\nAnalyzing Statistics Students’ Writing Before and After the Emergence of Large Language Models (in collaboration with my cohort-mate, Erin Franke)\n\nPresenting at the Research Satellite at USCOTS 2025\n\nTeaching Data Cleaning and Wrangling with R’s data.table Package (also in collaboration with my cohort-mate, Erin Franke)\n\nPresenting at the Poster and Beyond Session at USCOTS 2025"
+  },
+  {
+    "objectID": "about.html#current-research-projects-may-2025",
+    "href": "about.html#current-research-projects-may-2025",
+    "title": "About",
+    "section": "Current Research Projects (May 2025)",
+    "text": "Current Research Projects (May 2025)\n\nPredicting Avoidance Ties in Avoidance Networks Leveraging only the Positive Network between the Same Individuals and Basic Node-Level Characteristics (Advanced Data Analysis project, in collaboration with Nynke Niezink and Eva Jaspers)\nSelecting Chip-Seq Normalization Methods from the Perspective of their Technical Conditions (in collaboration with Jo Hardin and Danae Schulz)\nAnalyzing Statistics Students’ Writing Before and After the Emergence of Large Language Models (in collaboration with my cohort-mate, Erin Franke)\nTeaching Data Cleaning and Wrangling with the data.table R Package (also with Erin Franke)"
+  },
+  {
+    "objectID": "about.html#education-1",
+    "href": "about.html#education-1",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\n PhD in Statistics (in progress); Carnegie Mellon University\n BA in Mathematics and Philosophy (May 2024); Pomona College"
   }
 ]
