@@ -1,5 +1,5 @@
 ---
-title: "Data Analysis Exam Materials"
+title: "Data Analysis Exam Thoughts and Materials"
 author: "Sara Colando"
 date: today
 date-format: long
@@ -20,13 +20,13 @@ To be fully transparent, beyond taking 36-707 last Fall, I did not do very much 
 
 In the week leading up to the exam, I did the following to prepare:
 
--   Read through the 36-707 notes (primarily chapters 4-15) and wrote up notes with full code which could be easily copied and pasted into my own DA exam (my completed notes are available [here](DA-materials/model-types.qmd))
+-   Read through the 36-707 notes (primarily chapters 4-15) and wrote up notes with full code which could be easily copied and pasted into my own DA exam (**my completed notes are available [here](DA-materials/model-types.qmd)**)
 
 -   Read through completed data analysis exams from some students in upper years of the Ph.D. program
 
 -   Read through my three revised data analysis reports from 36-707
 
--   Made a "recipes" sheet with the technical conditions for different models as well as the steps I would take for each model type (the recipes document I made with one of my cohort-mates is available [here](DA-materials/recipes.qmd))
+-   Made a "recipes" sheet with the technical conditions for different models as well as the steps I would take for each model type (**the recipes document I made with one of my cohort-mates is available [here](DA-materials/recipes.qmd)**)
 
 -   Made a DA report template that I could fill in during the exam, which included all the rubric items from 36-707 (see @tbl-rubric), copied into the relevant report sections.[^2]
 
