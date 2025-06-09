@@ -11,7 +11,7 @@
     "href": "blog.html",
     "title": "Notebooks",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n\n\n\n\n\n\n\n\nApplying to (Bio)statistics PhD Programs\n\n\n\n\n\n\nMay 12, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCommon Outcome-Based Algorithmic Fairness Metrics\n\n\n\n\n\n\nMay 12, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nDA Exam Materials\n\n\n\n\n\n\nMay 12, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nProbability and Statistical Theory\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\nData Analysis Exam Materials\n\n\nJun 9, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "cv.html",
@@ -439,5 +439,19 @@
     "title": "About",
     "section": "Education",
     "text": "Education\n PhD in Statistics (in progress); Carnegie Mellon University\n BA in Mathematics and Philosophy (May 2024); Pomona College"
+  },
+  {
+    "objectID": "blogs/DA-exam-materials.html",
+    "href": "blogs/DA-exam-materials.html",
+    "title": "Data Analysis Exam Materials",
+    "section": "",
+    "text": "This Spring, at the end of my first-year, I took the Data Analysis (DA) exam, which is the “qualifying” exam for CMU’s Statistics Ph.D. program. This notebook includes the materials I made in preparation for the DA exam. The majority of these materials are based on the Fall 2024 Regression Analysis (36-707) lecture notes, which can be found here.1\nA little background on CMU’s DA Exam from the Statistics Graduate Student Handbook: “At the conclusion of each Spring Semester the Department administers the ‘Data Analysis Exam,’ which is designed to test students’ ability to apply statistical methods to address a substantive, real problem. Students are given eight hours to complete the exam, during which time they analyze the data and write a [ten-page] report to present their analysis and conclusions. The faculty are realistic as to what can be accomplished during the eight-hour period. In grading the exam, the faculty are looking for clear presentation of an appropriate analysis of the data. Emphasis is not placed on technical or mathematical sophistication,” (p. 13)."
+  },
+  {
+    "objectID": "blogs/DA-exam-materials.html#footnotes",
+    "href": "blogs/DA-exam-materials.html#footnotes",
+    "title": "Data Analysis Exam Materials",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThanks to Alex Reinhart for compiling these!↩︎\nI did an Executive Summary + IMRAD (Introduction, Methods, Results, and Discussion) report for the exam.↩︎"
   }
 ]

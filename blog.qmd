@@ -1,10 +1,9 @@
 ---
 title: "Notebooks"
-author: Sara Colando
 listing: 
-  contents: blogs
-  type: grid
+  contents: blogs/*
+  type: table
   sort-ui: [title, date]
   categories: true
-  fields: [image, title, author, date]
+  fields: [title, date]
 ---

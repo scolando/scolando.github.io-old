@@ -11,10 +11,7 @@
   {
     "listing": "/blog.html",
     "items": [
-      "/blogs/grad-applications.html",
-      "/blogs/understanding-fairness-metrics.html",
-      "/blogs/DA-exam-materials.html",
-      "/blogs/theory-review.html"
+      "/blogs/DA-exam-materials.html"
     ]
   }
 ]
