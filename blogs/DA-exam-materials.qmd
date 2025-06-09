@@ -1,6 +1,7 @@
 ---
 title: "Data Analysis Exam Thoughts and Materials"
 author: "Sara Colando"
+categories: [PhD Materials]
 date: today
 date-format: long
 format:
