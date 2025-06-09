@@ -12,9 +12,9 @@ css: cv.css
 
 ## Education
 
-**PhD in Statistics** [*2024 -- 2029 (Expected)*]{.cvdate}<br>Carnegie Mellon University, Pittsburgh, PA
+**Ph.D. in Statistics** [*2024 -- 2029 (Expected)*]{.cvdate}<br>Carnegie Mellon University, Pittsburgh, PA
 
-**BA in Mathematics and Philosophy** [*May 2024*]{.cvdate}<br>Pomona College, Claremont, CA
+**B.A. in Mathematics and Philosophy** [*May 2024*]{.cvdate}<br>Pomona College, Claremont, CA
 
 -   Graduated *magna cum laude* and with departmental honors (GPA: 3.99/4.00)
 
@@ -22,7 +22,7 @@ css: cv.css
 
 ## Publications and Manuscripts
 
-1.  **Colando, S.** & Hardin, J. Selecting ChIP-Seq Normalization Methods from the Perspective of their Technical Conditions. Revise and Resubmit, 2025.
+1.  **Colando, S.** & Hardin, J. Selecting ChIP-Seq Normalization Methods from the Perspective of their Technical Conditions. Submitted, 2025.
 
 2.  **Colando, S.** & Hardin, J. (2024). Philosophy within Data Science Ethics Courses. *Journal of Statistics and Data Science Education*, *32*(4), 361–373. <https://doi.org/10.1080/26939169.2024.2394542>
 
