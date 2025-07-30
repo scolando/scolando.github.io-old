@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-05-12">
+<meta name="dcterms.date" content="2025-07-26">
 
 <title>Sara Colando – Common Outcome-Based Algorithmic Fairness Metrics</title>
 <style>
@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -144,8 +164,8 @@ window.Quarto = {
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../projects.html"> 
-<span class="menu-text">TidyTuesdays</span></a>
+    <a class="nav-link" href="../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../blog.html"> 
@@ -193,7 +213,6 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#impossibility-results" id="toc-impossibility-results" class="nav-link" data-scroll-target="#impossibility-results"><span class="header-section-number">3.1</span> Impossibility Results</a></li>
   <li><a href="#defining-revelant-groups" id="toc-defining-revelant-groups" class="nav-link" data-scroll-target="#defining-revelant-groups"><span class="header-section-number">3.2</span> Defining “Revelant Groups”</a></li>
-  <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources"><span class="header-section-number">3.3</span> Additional Resources</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -217,7 +236,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 12, 2025</p>
+      <p class="date">July 26, 2025</p>
     </div>
   </div>
   
@@ -320,44 +339,81 @@ Figure&nbsp;2: Confusion Matrix Diagram from Analytics Vidhya.
 </section>
 <section id="calibration-within-groups" class="level2" data-number="2.8">
 <h2 data-number="2.8" class="anchored" data-anchor-id="calibration-within-groups"><span class="header-section-number">2.8</span> Calibration within Groups</h2>
+<p><em>Calibration within Groups</em> is a metric specifically for algorithms that output risk scores, i.e., an ordinal prediction for each observation that represents the probability that it belongs to the positive class. The COMPAS algorithm is a canonical example of a risk score algorithm in the algorithmic fairness literature.</p>
+<p>Per <em>Calibration within Groups</em>, an algorithm is fair if for each possible risk score, the (expected) proportion of individuals assigned that risk score who are actually members of the positive class is equal to the risk score and the same for each relevant group. That is:</p>
+<p><span class="math display">
+\mathbb{P}(\hat R \mid \mathrm{True~Class} = 1, \mathrm{~Group} = X) = \hat R
+</span></p>
+<p><em>where,</em> <span class="math inline">X \in \{A,B, \dots\}</span> and <span class="math inline">\hat R</span> denotes predicted risk score, possibility transformed to be between 0 and 1 (inclusive).</p>
+<p>Since there are several moving parts for satisfying <em>Calibration within Groups</em> metric, it is perhaps easier to understand through toy examples (see <a href="#fig-calibration-ex" class="quarto-xref">Figure&nbsp;3</a>).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-calibration-ex" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-calibration-ex-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="understanding-fairness-metrics_files/figure-html/fig-calibration-ex-1.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-calibration-ex-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: ADD
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>One motivation for <em>Calibration within Groups</em> is that <strong>ADD</strong>.</p>
 </section>
 <section id="balance-for-positive-class" class="level2" data-number="2.9">
 <h2 data-number="2.9" class="anchored" data-anchor-id="balance-for-positive-class"><span class="header-section-number">2.9</span> Balance for Positive Class</h2>
+<p>Alternatively, we might be most concerned with disparate performance of risk score algorithms on individuals who are members of the positive class.</p>
+<p>According to the <em>Balance for Positive Class</em> metric, an algorithm is unfair if the expected risk score assigned to individuals who are actually members of the positive differs across relevant groups:</p>
+<p><span class="math display">
+\mathbb{E}[\hat R \mid \mathrm{True~Class} = 1, \mathrm{~Group = A}]= \mathbb{E}[\hat R \mid \mathrm{True~Class} = 1, \mathrm{~Group = B}]
+</span></p>
 </section>
 <section id="balance-for-negative-class" class="level2" data-number="2.10">
 <h2 data-number="2.10" class="anchored" data-anchor-id="balance-for-negative-class"><span class="header-section-number">2.10</span> Balance for Negative Class</h2>
+<p>The (expected) average risk score assigned to those individuals who are actually members of the negative class is the same for each relevant group:</p>
+<p><span class="math display">
+\mathbb{E}[\hat R \mid \mathrm{True~Class} = 0, \mathrm{~Group = A}]= \mathbb{E}[\hat R \mid \mathrm{True~Class} = 0, \mathrm{~Group = B}]
+</span></p>
 </section>
 </section>
 <section id="concerns-with-outcome-based-fairness-metrics" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> Concerns with Outcome-Based Fairness Metrics</h1>
 <section id="impossibility-results" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="impossibility-results"><span class="header-section-number">3.1</span> Impossibility Results</h2>
-<p>One of the largest concerns in the Statistics and Machine Learning communities with outcome-based algorithmic fairness metrics is that it has been mathematically proven that three intuitively appealing outcome-based metrics for algorithmic fairness – (1) calibration within groups, (2) equal false positive rates, and (3) equal false negative rates – cannot be simultaneously satisfied when the base rates (i.e., the rate of positive instances) differ between the relevant groups (see <strong>CITE</strong>). In turn, <strong>ADD</strong>.</p>
-<p>A natural conclusion given the impossible results is that algorithmic fairness is not possible if the base rates differ between relevant groups. However, it is important to note that this conclusion relies on a hidden premise that ….</p>
-<p>I would argue that …</p>
+<p>One of the largest concerns in the Statistics and Machine Learning communities with outcome-based algorithmic fairness metrics is that it has been mathematically proven that three intuitively appealing outcome-based metrics for algorithmic fairness – (1) calibration within groups, (2) equal false positive rates, and (3) equal false negative rates – cannot be simultaneously satisfied when the base rates (i.e., the rate of positive instances) differ between the relevant groups (see <span class="citation" data-cites="Kleinberg2016">Kleinberg, Mullainathan, and Raghavan (<a href="#ref-Kleinberg2016" role="doc-biblioref">2016</a>)</span>, <span class="citation" data-cites="Chouldechova2017">Chouldechova (<a href="#ref-Chouldechova2017" role="doc-biblioref">2017</a>)</span>, and <strong>CITE</strong>). These results are often referred to as <em>Impossibility Results</em> for algorithmic fairness.</p>
+<p>A natural conclusion given the impossibility results is that algorithmic fairness is not possible when the base rates differ between relevant groups, which will be the case when there is pre-existing injustice, such as in bank lending, credit scores, hiring, education, and the criminal justice system. However, it is important to note that this conclusion relies on a hidden premise that all three of these outcome-based algorithmic fairness metrics – (1) calibration within groups, (2) equal false positive rates, and (3) equal false negative rates – all accurately capture the concept of fairness.</p>
+<p>However, I would argue that …<strong>ADD</strong></p>
 </section>
 <section id="defining-revelant-groups" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="defining-revelant-groups"><span class="header-section-number">3.2</span> Defining “Revelant Groups”</h2>
-<p>Group-based fairness metrics, which includes all of the ones that I outline in this notebook, require a condition to hold among “relevant groups”. Usually, “relevant groups” is treated as synonymous with groups that correspond to federally protected characteristics, which include race, color, religion, sex, sexual orientation, disability status, and age <strong>CITE</strong>.</p>
-<p>Further, what identity group is “socially salient” likely changes between contexts. Indeed, <strong>add</strong> note that from the perspective of algorithmic justice, we care about comparing the model’s performance for “systematically disadvantaged groups” against that for “systematically advantaged groups” (see their <em>Prioritarian Performance Principle</em>). Yet, as they note, their principle requires a social ontology to determine the relative social position of groups in a given context and, often, socially salient groups can overlap since social positions are complex and intersectional in real-life. For example, <strong>ADD</strong></p>
-</section>
-<section id="additional-resources" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="additional-resources"><span class="header-section-number">3.3</span> Additional Resources</h2>
-<ul>
-<li><p>….</p></li>
-<li><p>….</p></li>
-</ul>
+<p>Group-based fairness metrics (which includes all of the ones that I outline in this notebook) also require a condition to hold among “relevant groups”. In practice, “relevant groups” is treated as synonymous with groups that correspond to federally protected characteristics, which include race, color, religion, sex, sexual orientation, disability status, and age.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<p>However, what identity group is “relevant” might change between contexts. Indeed, <span class="citation" data-cites="Lazar2023">Lazar and Stone (<a href="#ref-Lazar2023" role="doc-biblioref">2023</a>)</span> note that from the perspective of algorithmic justice, we care about comparing the model’s performance for “systematically disadvantaged groups” against that for “systematically advantaged groups” (see their <em>Prioritarian Performance Principle</em>), where a social ontology is needed to determine the relative social position of groups in a given context. This social ontology is often quite complicated in practice – reflecting that real-life social positions tend to be both complex and intersectional. For example, suppose we were trying to assess whether an hiring algorithm is unfair <strong>ADD</strong>.</p>
+<p>Hence, group-based fairness metrics require us to define “socially salient” groups – often in a way that obfuscates the complexities of social positions for the sake of …<strong>ADD</strong>.</p>
+
 
 
 </section>
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Chouldechova2017" class="csl-entry" role="listitem">
+Chouldechova, Alexandra. 2017. <span>“Fair Prediction with Disparate Impact: A Study of Bias in Recidivism Prediction Instruments.”</span> <em>Big Data</em> 5 (2): 153–63. <a href="https://doi.org/10.1089/big.2016.0047">https://doi.org/10.1089/big.2016.0047</a>.
+</div>
+<div id="ref-Kleinberg2016" class="csl-entry" role="listitem">
+Kleinberg, Jon, Sendhil Mullainathan, and Manish Raghavan. 2016. arXiv. <a href="https://doi.org/10.48550/ARXIV.1609.05807">https://doi.org/10.48550/ARXIV.1609.05807</a>.
+</div>
+<div id="ref-Lazar2023" class="csl-entry" role="listitem">
+Lazar, Seth, and Jake Stone. 2023. <span>“On the Site of Predictive Justice.”</span> <em>Noûs</em> 58 (3): 730–54. <a href="https://doi.org/10.1111/nous.12477">https://doi.org/10.1111/nous.12477</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>From the COMPAS example, we can already see a point of contention in characterizing algorithmic fairness for discrete prediction problems, which is what threshold to use for decision-making? For example, why separate low from medium to high risk of recidivism at 4-5 rather than 3-4 or 5-6? How do we think about fairness when determining decision thresholds?<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>In this notebook, I interpret each fairness metric as a <strong>necessary</strong> but not necessarily sufficient condition of algorithm fairness, meaning that an algorithm would be considered <em>unfair</em> if it does not satisfy <em>X</em> metric necessary for algorithmic fairness but it would not necessarily be <em>fair</em> if it does satisfy the required metric. This, in my opinion, is the most charitable way of interpreting the common statistical fairness metrics that I discuss in this notebook.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>For more information, see <a href="https://civilrights.osu.edu/training-and-education/protected-class-definitions">https://civilrights.osu.edu/training-and-education/protected-class-definitions</a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -784,7 +840,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Made by Sara Colando,<br>May 2024</p>
+<p>Sara Colando, 2024</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

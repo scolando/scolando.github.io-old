@@ -1,6 +1,5 @@
 ---
 title: "Model Types and Diagnostics"
-date: April 30, 2025
 execute:
   warning: false
   message: false

@@ -1,0 +1,366 @@
+[
+  {
+    "objectID": "research/chip-seq/chip-seq.html",
+    "href": "research/chip-seq/chip-seq.html",
+    "title": "Selecting ChIP-Seq Normalization Methods from the Perspective of their Technical Conditions",
+    "section": "",
+    "text": "Overview: Within the last two decades, high throughput sequencing has become one of the most popular methods for data generation within genomics, epigenomics, and transcriptomics. A popular method of high throughput sequencing is chromatin immunoprecipitation followed by high throughput sequencing, or ChIP-Seq. ChIP-Seq data provides vital insights into locations on the genome where there are differences in DNA occupancy between experimental states (i.e., differential DNA occupancy). However, since ChIP-Seq data is collected experimentally, it must be normalized to assess which genomic regions have differential DNA occupancy. While normalization is an essential step in identifying genomic regions with differential DNA occupancy, the primary technical conditions underlying ChIP-Seq normalization methods have yet to be specifically examined in the academic literature. In this thesis, we identify three primary technical conditions underlying ChIP-Seq between-sample normalization methods: (1) Symmetric Differential DNA Occupancy, (2) Equal Amount of Total DNA Occupancy across Experimental States, and (3) Equal Amount of Total Background Binding across Experimental States. We then categorize commonly-used ChIP-Seq normalization methods based on the technical conditions they use to normalize between experimental states. A major contribution of this thesis is our ChIP-Seq read count simulation results, which validate our categorization of the normalization methods by their technical conditions. We conclude by underscoring how our findings demonstrate that not all normalization methods are equally effective on all kinds of ChIP-Seq data. Rather, researchers should use their understanding of the ChIP-Seq experiment at hand to guide their choice of normalization method when possible or try mulitiple between-sample ChIP-Seq normalization methods to create a ‘high-confidence’ peakset which contains peaks that are less sensitive to one’s choice of normalization method.\n\nSenior Thesis PDF on Selecting ChIP-Seq Normalization Methods from the Perspective of their Technical Conditions, advised by Jo Hardin.\n\nFunded by Pomona College’s The Class of 1971 Summer Undergraduate Research Fund (Summer 2022) and the Kenneth Cooke Summer Research Fellowship (Summer 2024)."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Notebooks",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n\n\n\n\n\n\n\n\nApplying to (Bio)statistics PhD Programs\n\n\n\n\n\n\nJan 19, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nDA Exam Materials\n\n\n\n\n\n\nJan 19, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nProbability and Statistical Theory\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnderstanding (and Distinguishing) Common Algorithmic Fairness Metrics\n\n\n\n\n\n\nJan 19, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "Link to PDF Version of CV"
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "Curriculum Vitae",
+    "section": "Education",
+    "text": "Education\nPhD in Statistics 2024 – 2029 (Expected)Carnegie Mellon University, Pittsburgh, PA\nBA in Mathematics and Philosophy May 2024Pomona College, Claremont, CA\n\nGraduated magna cum laude and with departmental honors (GPA: 3.99/4.00)\nUndergraduate Thesis: Selecting ChIP-Seq Normalization Methods from the Perspective of their Technical Conditions, advised by Dr. Johanna Hardin (received excellent thesis designation by Mathematics and Statistics Department)"
+  },
+  {
+    "objectID": "cv.html#publications",
+    "href": "cv.html#publications",
+    "title": "Curriculum Vitae",
+    "section": "Publications",
+    "text": "Publications\nColando, S., Hardin, J. Philosophy as Integral to a Data Science Ethics Course, Journal of Statistics and Data Science Education, accepted, 2023. Preprint."
+  },
+  {
+    "objectID": "cv.html#research-experience",
+    "href": "cv.html#research-experience",
+    "title": "Curriculum Vitae",
+    "section": "Research Experience",
+    "text": "Research Experience\nPomona College Department of Mathematics and StatisticsResearch Assistant to Dr. Johanna Hardin May 2022 – Aug 2024\n\nAnalyzed between-sample normalization techniques by their technical assumptions to improve differential binding analysis practices for ChIP-Seq and similarly structured types of high-throughput data\nCreated reproducible ChIP-Seq read count simulations using R, Bash, and high-performance computing to examine how violating normalization method assumptions impacts the false discovery rate and power of identifying genomic regions with true differential DNA occupancy.\n\nData Science Ethics Independent Project (Supervisor: Dr. Johanna Hardin) May – Oct 2023\n\nSynthesized resources and pedagogies of existing Data Science Ethics undergraduate courses to connect key ethical concepts to data science practices\nCreated a website to effectively communicate data science ethics concepts and relevant background information to a broad community of decision-makers\nAided in Pomona College’s development of an ethics course for the recently approved data science minor\n\nCarnegie Mellon University Department of Statistics and Data ScienceResearch Assistant to Dr. Ron Yurko May – Aug 2023\n\nPerforming mixture-model clustering analysis to discover trends in movement patterns for injured racehorses\nIdentifying horses who under-raced through residual analysis of a created expected race count model\nEngaged in 8 weeks of lectures about popular statistical analysis techniques, data engineering, and novel data science methodologies employed in sports analytics\n\nSelf-Directed ProjectData Analysis and Visualization CreatorJan 2021 – May 2024\n\nConducting exploratory data analysis in R to improve data visualization and communication skills every week using data provided by the “R for Data Science” Online Learning Community\nHelping students new to R become more familiar with the programming language and troubleshoot errors in 2-hour Pomona TidyTuesday workshop offered each week\n\nUniversity of California, San Diego Halıcıoğlu Data Science Institute Intelligence, Data, Ethics, and Society (IDEAS) Summer Institute Participant Aug 2023\n\nParticipated in workshops taught by experts in domains like data science, AI, philosophy, and law to improve critical and interdisciplinary thinking on data science and AI ethics topics\nCollaborated with three other students on a two-week research project, examining practical methods of implementing responsible data science and AI practices in a California wildfire resource allocation algorithm\n\nUniversity of Michigan School of Public HealthBig Data Summer Institute Research Assistant to Dr. Nikola Banovic June – Aug 2022\n\nCollaborated with three other students to implement a partially Bayesian neural network to quantify and communicate prediction uncertainty in a supervised brain tumor segmentation model via Python’s PyTorch and TensorFlow packages\nParticipated in 6 weeks of lectures about ethical data collection practice in healthcare, probability and statistical theory, and the ethical implications of using statistics and computer science methods in healthcare settings"
+  },
+  {
+    "objectID": "cv.html#mentorship-experience",
+    "href": "cv.html#mentorship-experience",
+    "title": "Curriculum Vitae",
+    "section": "Mentorship Experience",
+    "text": "Mentorship Experience\nCarnegie Mellon Department of Statistics and Data Science Graduate Teaching Assistant Sep 2024– Present\n\n\n\nPomona College Department of Mathematics and Statistics Course Mentor and Grader Jan 2021 – May 2024\n\nLed 2-hour mentor sessions each week to help students with homework and course material for Statistical Linear Models (Spring 2024) Introduction to Biostatistics (Spring 2023) and Linear Algebra (Fall 2021)\nWorked with co-mentors and professors to foster inclusivity and collaboration within small and large group environments\nGraded problem sets each week for 30+ students, with personalized feedback, within the professor’s desired time frame for Statistical Linear Models (Spring 2024), Introduction to Biostatistics (Spring 2023), Calculus I (Spring 2022), and Linear Algebra (Spring and Fall 2021)\n\n1-2-1 Summer Bridge Program Teacher’s Assistant June – Sep 2021\n\nLed 1.5-hour meetings for three small cohorts, consisting of incoming Pomona College students, twice per week\nTaught mathematical concepts (e.g., logic, calculus, combinatorics, number theory) to incoming undergraduate students\nOrganized group bonding by preparing icebreakers and virtual games for 40+ students in the cohort\nProvided individualized feedback on cohort members’ submitted problem sets three times a week\n\nPomona College Center for Speaking, Writing, and the Image Course Writing Partner Aug 2023 - Present\n\nProviding meaningful writing feedback to students from diverse writing backgrounds in one-on-one and small group settings; attached writing partner for the Critical Inquiry Seminar (ID1): I Disagree (Fall 2023)\n\nPomona College Department of Biology Introductory Genetics w/ Lab Course Mentor and Grader Aug – Dec 2022\n\nAnswered student questions within lectures twice a week\nCo-hosted mentor sessions to help students with problem sets and course concepts\nCollaborated with the professors to ensure inclusivity, peer collaboration, and student learning were optimized within classroom and mentor session environments\nGraded 30+ problem sets each week and provided individualized feedback to each student"
+  },
+  {
+    "objectID": "cv.html#leadership-and-service",
+    "href": "cv.html#leadership-and-service",
+    "title": "Curriculum Vitae",
+    "section": "Leadership and Service",
+    "text": "Leadership and Service\nCarnegie Mellon Department of Statistics and Data Science TeachStat Working Group, Mentorship Committee, Mentor for Undergraduates Aug 2024 – Present\nPomona College Department of Philosophy Search and Selection Committee Member Aug 2023 – Mar 2024\nPomona-Pitzer Athletics Varsity Women’s Cross Country Team Captain Aug – Nov 2023"
+  },
+  {
+    "objectID": "cv.html#presentations",
+    "href": "cv.html#presentations",
+    "title": "Curriculum Vitae",
+    "section": "Presentations",
+    "text": "Presentations\n\nColando, S. “Predicting Avoidance Ties within Social Networks (ADA Progress Update)”, Networkshop Research Group, Carnegie Mellon University, March 2025\nColando, S. & Franke E. “Computational Efficiency of R’s data.table Package”, StatBytes, Carnegie Mellon University, March 2025\nColando, S. & Hardin, J. “Philosophy within Data Science Ethics Courses”, CAUSE Webinar Series, October 2024\nColando, S., Pipping, J., Wilson K. “Clustering Race Horse Movement Profiles to Discover Trends in Injured Horses”, Carnegie Mellon Sports Analytics Conference 2023, November 2023\nColando, S. “Analyzing Data Science Ethics Pedagogies”, Claremont Center for Mathematical Sciences Poster Session, September 2023\nColando, S. “Analyzing Data Science Ethics Pedagogies”, Intensive Summer Experience Symposium, September 2023\nColando, S., Pipping, J., Wilson K. “Clustering Race Horse Movement Profiles to Discover Trends in Injured Horses”, Summer Undergraduate Research Experience (SURE) 2023 Project Showcase, July 2023\nColando, S. Panelist for “Pomona Funded Summer Experiences Informational Session”, Family Weekend, October 2022\nColando, S. “Analyzing ChIP-Seq Normalization Techniques through the Lens of their Biological Assumptions”, Intensive Summer Experience Symposium, September 2022\nColando, S. “Analyzing ChIP-Seq Normalization Techniques through the Lens of their Biological Assumptions”, Claremont Center for Mathematical Sciences Poster Session, September 2022\nChu, C., Colando, S., Nandi, D., Serrano, X. “Quantifying Uncertainty in a Tumor Segmentation Model”, A Symposium on Big Data, Human Health, and Statistics. July 2022"
+  },
+  {
+    "objectID": "cv.html#honors-and-awards",
+    "href": "cv.html#honors-and-awards",
+    "title": "Curriculum Vitae",
+    "section": "Honors and Awards",
+    "text": "Honors and Awards\n\nDistinction on First-Year Data Analysis Exam 2025\n\nGiven by Statistics and Data Science Department, Carnegie Mellon University\n\nBlair Nixon Award 2024\n\nGiven to a senior student who exemplifies the high ideals of the College in scholarship, sportsmanship, and organized athletic pursuits.\n\nBruce Jay Levy Senior Prize 2024\n\nGiven to a senior in the Mathematics and Statistics Department who throughout their time at Pomona has demonstrated a commitment to collaborative learning, fostering an inclusive mathematical community, and to expanding their own academic comfort zone.\n\nW.T. Jones Prize in Philosophy 2024\n\nIn recognition of a senior philosophy major who has shown interest and talent in integrating philosophy with larger humanistic concerns (received for my work in data science ethics and contributions to Pomona’s Philosophy Department).\n\nPhi Beta Kappa, Pomona College 2024\nSigma Xi, Pomona College 2024\nPomona College Scholar 2020 – 2024\nPomona College Women’s Cross Country and Track and Field Varsity Letter Recipient 2021 – 2024"
+  },
+  {
+    "objectID": "cv.html#computer-and-language-skills",
+    "href": "cv.html#computer-and-language-skills",
+    "title": "Curriculum Vitae",
+    "section": "Computer and Language Skills",
+    "text": "Computer and Language Skills\n\nComputer – Programming languages including R, Python, Unix, and SQL\nLanguage – Spanish (conversational proficiency)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Sara Colando",
+    "section": "",
+    "text": "Hi, and welcome to my website!\nI am a first-year PhD student in the Department of Statistics and Data Science at Carnegie Mellon University. I graduated magna cum laude from Pomona College in Spring 2024 with a double major in Mathematics and Philosophy.\nThis spring, I started my Advanced Data Analysis (ADA) project on predicting avoidance ties in social networks through leveraging features of the positive network between the same individuals and basic node-level covariates (e.g., sex and ethnicity) in collaboration with Nynke Niezink and Eva Jaspers (Utrecht University). Additionally, I have been involved in genomics research – investigating technical conditions that underlie ChIP-Seq normalization methods with Jo Hardin since Summer 2022.\nI am also passionate about work at the intersection of statistics, data science, and philosophy, particularly related to data science ethics and (social) epistemology. Find out more about my interests and past experiences by browsing the site."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "TidyTuesday Creations",
+    "section": "",
+    "text": "TidyTuesday is a weekly community activity put on the the Data Science Learning Community. I try to spend a little time each week creating a data visualization or model with the data posted to the official TidyTuesday GitHub Repository (linked below)."
+  },
+  {
+    "objectID": "projects.html#highlighted-creations",
+    "href": "projects.html#highlighted-creations",
+    "title": "TidyTuesday Creations",
+    "section": "Highlighted Creations",
+    "text": "Highlighted Creations\nHere are some of my favorite data visualizations that I have made from TidyTuesday over the past two years. Each title has a link to my code for creating the visualization.\n05/07/2024: Demographics of the Rolling Stone’s Top 500 Albums of All Time in 2003 vs. 2012 vs. 2020 \n\n\n\n\n\n03/05/2024: The Mr. Trash Wheel Fleet’s Collected Garbage over the Years \n\n\n\n\n\n11/28/2023: Dr. Who Distribution of Episode Rankings Based on the Episode Writer \n\n\n\n\n\n10/24/2023: Difference between the Taylor’s Version and the Old Version of Songs from Fearless and Red \n\n\n\n\n\n03/21/2023: Coding Language Creation over the Years \n\n\n\n\n\n12/20/2022: Seattle Weather in 2021 \n\n\n\n\n\n07/05/2022: Changes in Median Rent Prices and Percent of Apartments by Neighborhood in San Francisco"
+  },
+  {
+    "objectID": "projects.html#helpful-resources",
+    "href": "projects.html#helpful-resources",
+    "title": "TidyTuesday Creations",
+    "section": "Helpful Resources",
+    "text": "Helpful Resources\nIf you are interested in participating in TidyTuesday yourself, here are some resources that I have found helpful for starting:\n\n1. Finding Inspiration\nWhen beginning TidyTuesdays, I find it super helpful to take inspiration from what others have done with the data either this week or in previous weeks. X (i.e., Twitter), Fossodon, and sometimes even Google searches are a great way of gaining inspiration from others!\n\n\n Search “#tidytuesday” on BlueSky\n\n\nhttps://bsky.app/hashtag/TidyTuesday\n\n\n\n\n Search “#tidytuesday” on Mastodon\n\n\nhttps://fosstodon.org/tags/tidytuesday\n\n\n\n\n2. Loading in the Data\nUsually, I read the data into an .Rmd file using the code block that looks like the following:\n```{r}\ndataset_1 &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/some_date/dataset_1.csv')\n```\n\n\n3. Analyzing and Visualizing the Data\nAfter that, the world (or, in this case, data) is your oyster! I primarily use Tidyverse to create my TidyTuesday data visualizations and models, so I appreciate the following cheat sheets:\n\n\n stringr Cheat Sheet PDF\n\n\nhttps://rstudio.github.io/cheatsheets/strings.pdf\n\n\n\n\n dplyr Cheat Sheet PDF\n\n\nhttps://rstudio.github.io/cheatsheets/data-transformation.pdf\n\n\n\n\n GGPlot2 Cheat Sheet PDF\n\n\nhttps://rstudio.github.io/cheatsheets/data-visualization.pdf"
+  },
+  {
+    "objectID": "research/data-ethics/data-ethics.html",
+    "href": "research/data-ethics/data-ethics.html",
+    "title": "Philosophy within Data Science Ethics Courses",
+    "section": "",
+    "text": "Overview: There is wide agreement that ethical considerations are a valuable aspect of a data science curriculum, and to that end, many data science programs offer courses in data science ethics. There are not always, however, explicit connections between data science ethics and the centuries-old work on ethics within the discipline of philosophy. Here, we present a framework for bringing together key data science practices with ethical topics. The ethical topics were collated from sixteen data science ethics courses with public-facing syllabi and reading lists. We encourage individuals who are teaching data science ethics to engage with the philosophical literature and its connection to current data science practices, which is rife with potentially morally charged decision points.\n\nColando, S., & Hardin, J. (2024). Philosophy within Data Science Ethics Courses. Journal of Statistics and Data Science Education, 32(4), 361–373. https://doi.org/10.1080/26939169.2024.2394542\n\nFunded by Pomona College’s Evelyn B. Craddock McVicar Memorial Fund (Summer 2023) and the Kenneth Cooke Summer Research Fellowship (Summer 2024)."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I am a first-year Ph.D. student in Carnegie Mellon’s Statistics and Data Science department. Before that, I attended Pomona College in Claremont, California, where I completed a double major in mathematics and philosophy. At Pomona, I worked primarily with Jo Hardin, conducting research in statistical genomics and data science ethics pedagogy.\nOutside of research, I really enjoy mentoring (doing so for Statistical Linear Models, Introduction to Biostatistics, Linear Algebra, Introductory Genetics, and Pomona’s 1-2-1 math summer bridge program) and am also a big data visualization nerd and try to spend some time creating a new one each week as part of TidyTuesday (a community activity put on by the Data Science Learning Community). In my free time, I also like to run and was part of Pomona-Pitzer’s Cross Country and Track and Field teams during my four years at Pomona.\nAnother primary interest of mine is philosophy, especially (feminist) philosophy of science, ethics, and epistemology. I hope to stay engaged in philosophy and, with that, continue to understand the ethical dimensions of statistical technologies while completing my Ph.D. at Carnegie Mellon."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\n Ph.D. in Statistics and Data Science (in progress)\nCarnegie Mellon University\n B.A. in Mathematics and Philosophy (May 2024)\nPomona College"
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About",
+    "section": "Contact",
+    "text": "Contact\n scolando@andrew.cmu.edu"
+  },
+  {
+    "objectID": "extras.html",
+    "href": "extras.html",
+    "title": "Extras",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\n\n\n\n\nAI and Data Science Ethics Writing\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "extras/philosophy-writing/philosophy.html",
+    "href": "extras/philosophy-writing/philosophy.html",
+    "title": "AI and Data Science Ethics Writing",
+    "section": "",
+    "text": "Title\n\n\nDescription\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "extras/philosophy-writing/writing/writing-sample-1.html",
+    "href": "extras/philosophy-writing/writing/writing-sample-1.html",
+    "title": "The Epistemic Flaw of Gerrymandered Biases in Endorsed Algorithms",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "extras/philosophy-writing/writing/writing-sample-1/writing-sample-1.html",
+    "href": "extras/philosophy-writing/writing/writing-sample-1/writing-sample-1.html",
+    "title": "The Epistemic Flaw of Gerrymandered Biases in Endorsed Algorithms",
+    "section": "",
+    "text": "Download PDF file.\nImagine that there is a recidivism algorithm being used to determine if an incarcerated man should be granted early parole release. This algorithm has the bias that ‘Black men are more likely to be reconvicted than white men.’ Suppose that this algorithmic bias is statistically accurate; it is, in fact, more likely for Black men to be reconvicted than white men. Still, the algorithm’s disposition to predict that a Black man is more likely to be reconvicted than a white man seems morally problematic. However, could the algorithmic bias (which leads to its morally flawed disposition) also be epistemically flawed, even though it is statistically accurate? In this paper, I elucidate how a bias’s etiology, i.e., the means that give rise to a bias, can influence the epistemic evaluation of an algorithmic bias. In particular, I argue that biases that arise through gerrymandered means in endorsed algorithms are epistemically flawed in virtue of being gerrymandered and endorsed. I begin by explaining what I mean by bias and vindicating that algorithms can have biases. I next adopt philosopher Jessie Munton’s argument that gerrymandered perceptual priors are inherently epistemically flawed in order to offer a sufficient condition for gerrymandered biases and underscore a primary epistemic aim of predictive skill. Using my adopted version of Munton’s argument, I contend that gerrymandered biases in endorsed algorithms increase the likelihood of inaccurate modal predictions, thereby reducing the predictive skill of agents whose decisions are influenced by the algorithm. Such a reduction in predictive skill diminishes one’s ability to gain causal-explanatory knowledge about relevant environments, which is epistemically problematic. Thus, I conclude that gerrymandered biases in endorsed algorithms are epistemically flawed in virtue of being gerrymandered and endorsed\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "extras/philosophy-writing/writing/writing-sample-2/writing-sample-2.html",
+    "href": "extras/philosophy-writing/writing/writing-sample-2/writing-sample-2.html",
+    "title": "On Calibration Within Groups being Necessary for Algorithmic Fairness",
+    "section": "",
+    "text": "Download PDF file.\nAs algorithms have become more ubiquitous in decisions with high moral stakes – like deciding who to approve for a loan, who to release early on parole, and which communities to give additional governmental resources to – there has also been a growing concern about what is required for such algorithms to be fair. One criterion that is commonly viewed as necessary for algorithmic fairness within computer science circles is calibration within groups. Per calibration within groups, an algorithm is fair only if for every risk score s and group A, s percent of the individuals in group A who are assigned a risk score s are indeed positive instances. However, in this paper, I argue that calibration within groups is not always necessary for algorithmic fairness, even when it is most charitably conceived. I begin with a primer on algorithmic fairness and then further explain what is meant by calibration within groups. I next explicate Brian Hedden and Robert Long’s positive arguments for why calibration within groups is necessary for algorithmic fairness. I then delve into critiques of such arguments. These critiques lead me to present a modified conception of calibration within groups, which I contend is maximally charitable. Yet, I present a case to demonstrate how an algorithm can violate even the maximally charitable conception of calibration within groups but still fail to be intuitively unfair in virtue of doing so. Thus, I conclude that calibration within groups, even when it is most charitably conceived, is not always necessary for algorithmic fairness.\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "extras/philosophy.html",
+    "href": "extras/philosophy.html",
+    "title": "AI and Data Science Ethics Writing",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nDescription\n\n\n\n\n\n\nOn Calibration Within Groups being Necessary for Algorithmic Fairness\n\n\n\n\n\n\n\nThe Epistemic Flaw of Gerrymandered Biases in Endorsed Algorithms\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "philosophy-writing/writing/writing-sample-1/writing-sample-1.html",
+    "href": "philosophy-writing/writing/writing-sample-1/writing-sample-1.html",
+    "title": "The Epistemic Flaw of Gerrymandered Biases in Endorsed Algorithms",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "philosophy-writing/writing/writing-sample-2/writing-sample-2.html",
+    "href": "philosophy-writing/writing/writing-sample-2/writing-sample-2.html",
+    "title": "The Epistemic Flaw of Gerrymandered Biases in Endorsed Algorithms",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "blogs/applying-grad-school.html",
+    "href": "blogs/applying-grad-school.html",
+    "title": "Applying to (Bio)statistics PhD Programs",
+    "section": "",
+    "text": "I applied to primarily (Bio)statistics PhD programs during the 2023-2024 application cycle. Coming from a small liberal arts school, I found any and all resources or tidbits of advice incredibly helpful. That said, I wanted to share my advice as well as some of my application materials in this blog post in case others find it helpful."
+  },
+  {
+    "objectID": "cv.html#publications-and-in-progess-papers",
+    "href": "cv.html#publications-and-in-progess-papers",
+    "title": "Curriculum Vitae",
+    "section": "Publications and In-Progess Papers",
+    "text": "Publications and In-Progess Papers\n\nColando, S. & Hardin, J. Selecting ChIP-Seq Normalization Methods from the Perspective of their Technical Conditions. Revise and Resubmit, 2025.\nColando, S. & Hardin, J. (2024). Philosophy within Data Science Ethics Courses. Journal of Statistics and Data Science Education, 32(4), 361–373. https://doi.org/10.1080/26939169.2024.2394542"
+  },
+  {
+    "objectID": "cv.html#teaching-experience",
+    "href": "cv.html#teaching-experience",
+    "title": "Curriculum Vitae",
+    "section": "Teaching Experience",
+    "text": "Teaching Experience\nCarnegie Mellon Department of Statistics and Data Science Graduate Teaching Assistant\n\nCarnegie Mellon Sports Analytics Camp (Summer 2025)\n36-226: Introduction to Statistical Inference, Head TA (Spring 2025)\n36-600: Overview of Statistical Learning and Modeling (Fall 2024)\n\nPomona College Course Mentor and Grader\n\nMATH158: Statistical Linear Models (Spring 2024)\nMATH058B: Introduction to Biostatistics (Spring 2023)\nMATH060: Linear Algebra (Fall 2021)\nMATH030: Calculus I, Grader Only (Spring 2021)\nID001: First-year Interdisciplinary Seminar: I Disagree (Fall 2023)\nBIOL040: Introductory Genetics with Lab (Fall 2022)\n\n1-2-1 Summer Bridge Program Teacher’s Assistant (Summer 2021)\n\nLed 1.5-hour meetings, twice per week, for three small cohorts of incoming Pomona College students\nOrganized group bonding by preparing icebreakers and virtual games for 40+ students in the program\nMathematical concepts taught: logic, statistics, calculus I and II, combinatorics, and number theory"
+  },
+  {
+    "objectID": "research/horses/horses.html",
+    "href": "research/horses/horses.html",
+    "title": "Clustering Race Horse Movement Profiles to Discover Trends in Injured Horses",
+    "section": "",
+    "text": "Overview: Between 2009 and 2021, over 7,200 horses died or were euthanized due to racing-related injuries. Using horse profile data and horse tracking data from the NYRA, we hoped to identify horses who under-raced between 2019 and 2021, cluster movement profiles for horses who raced in 2019 New York races, and discover whether certain profiles were more associated with injured horses.\nBy fitting a negative binomial model on horse profile data and performing residual analysis, we discovered that at least 251 horses under-raced between 2019 and 2021. Additionally, clustering horse movement profiles revealed that a horse’s speed profile is most associated with its injury status: specifically, greater variation in speed is more associated with injury.\nDone in through Carnegie Mellon’s Sports Analytics Camp and via an external partnership with Joseph Appelbaum at the New York Thoroughbred Horsemen’s Association."
+  },
+  {
+    "objectID": "research/tumor-mri/tumor-mri.html",
+    "href": "research/tumor-mri/tumor-mri.html",
+    "title": "Implementing a Partially Bayesian Neural Network for Brain Tumor Segmentation",
+    "section": "",
+    "text": "Overview: Radiologists segment tumors from MRI scans to determine treatment plans such as surgical resection or radiation therapy, whereas neural networks can streamline the segmentation process to ensure ideal tumor removal and reduce the burden on radiologists. However, these black-box models currently lack explainability, which leads to a lack of trust from different end users like physicians and patients when used to segment brain tumors. Uncertainty Quantification communicates to stakeholders: (a) if and when they should trust model predictions and (b) how fair these predictions are on sample-wide and patient-specific cases. Therefore, Uncertainty Quantification enhances a model’s transparency by exposing a model’s properties to various stakeholders to better understand, improve, and contest the model’s predictions. In this project, we aim to quantify model uncertainty by using a partially Bayesian neural network to communicate where the model is uncertain of its prediction of a pixel being classified as “tumor” or “non-tumor.” In particular, we aim to address the following questions:\n\nWhere is this model failing, and how is it failing to properly segment the tumor?\nIn what cases is the model certain but still making mistakes in tumor segmentation?\n\nUltimately, we find that the highest uncertainty is at the boundary regions of the model’s predicted tumor location and the false negative and false positive pixels are highly clustered. Further, we discover that there is generally higher certainty for accurately classified pixels as well as greater certainty for false negatives than false positives pixels. From our findings, we suggest future work in collaboration with clinicians to better understand why model fails in specific brain regions, and why false positive and false negative results tend to cluster. Moreover, we suggest that the model performance and uncertainty levels across should be compared various subsets (e.g., different tumor histologies, tissue source sites, patient sex, vital status, etc.) to investigate whether there are trends in differential model performance across different demographic groups.\n\nSummer 2022 Poster PDF on quantifying uncertainty in a tumor segmentation model.\nSummer 2022 Presentation PDF on quantifying uncertainty in a tumor segmentation model\n\nDone through University of Michigan School of Public Health’s Big Data Summer Institute and via a partnership with Dr. Nikola Banovic and Snehal Prabhudesai in University of Michigan School of Computer Science and Engineering."
+  },
+  {
+    "objectID": "blogs/understanding-fairness-metrics.html",
+    "href": "blogs/understanding-fairness-metrics.html",
+    "title": "Understanding (and Distinguishing) Common Algorithmic Fairness Metrics",
+    "section": "",
+    "text": "Figure 1: A slightly cynical perspective on algorithmicfairness metrics from Machines Gone Wrong.\nAlgorithms are becoming an increasingly ubiquitous component of decision-making with high moral stakes, such as loan and mortgage approval, governmental aid allocations, health insurance claim approval, and US bail and sentencing procedures. With the growing use of algorithms in settings with high moral stakes, there has also been a growing concern about algorithmic fairness, or more specifically, whether an algorithm used to make decisions in such settings is (un)fair.\nMany statistical metrics have been developed to assess whether a given algorithm is (un)fair. Since 2022, I have been interested in these measures and how they track with discussions of fairness and justice coming from Philosophy – a field which has been theorizing about fairness and justice for more than two millennia. However, when doing research on statistical metrics of fairness, I realized that the definitions of such metrics tend to be scattered across multiple papers, making it difficult to understand how different metrics compare (or motivate) one another.\nIn this notebook, I provide an overview of common algorithmic fairness metrics coming from Statistics and draw comparison between the described metrics. For simplicity, I focus on outcome-based measures of fairness (i.e., metrics that evaluate an algorithm for fairness using its outputted predictions), though, I hope to delve into more procedural-based fairness measures sometime in the future. Additionally, since many of the common fairness metrics are for discrete prediction problems, I primarily focus on those metrics in this notebook rather than fairness metrics for continuous prediction problems."
+  },
+  {
+    "objectID": "blogs/understanding-fairness-metrics.html#calibration-within-groups",
+    "href": "blogs/understanding-fairness-metrics.html#calibration-within-groups",
+    "title": "Understanding (and Distinguishing) Common Algorithmic Fairness Metrics",
+    "section": "Calibration within Groups",
+    "text": "Calibration within Groups"
+  },
+  {
+    "objectID": "blogs/understanding-fairness-metrics.html#predictive-parity",
+    "href": "blogs/understanding-fairness-metrics.html#predictive-parity",
+    "title": "Understanding (and Distinguishing) Common Algorithmic Fairness Metrics",
+    "section": "Predictive Parity",
+    "text": "Predictive Parity\nHowever, depending on the context of the algorithm, it might be more crucial from the perspective fairness for there to be equal accuracy between groups among those predicted as part of the positive class, not just equal accuracy between the groups in general (i.e. unconditioned on the individual’s predicted class). The fairness metric of Predictive Parity captures this concern. According to Predictive Parity, an algorithm is unfair between relevant groups A and B if:\n\\[\\mathbb{P}(\\mathrm{True~Class = 1|~Pred.~Class =1,~Group = A}) \\neq \\mathbb{P}(\\mathrm{True~Class = 1|~Pred.~Class = 1,~Group = B})\\] Notice how Predictive Parity relates to the algorithm’s Positive Predictive Value (PPV) or Precision add"
+  },
+  {
+    "objectID": "blogs/understanding-fairness-metrics.html#equal-false-positive-rates",
+    "href": "blogs/understanding-fairness-metrics.html#equal-false-positive-rates",
+    "title": "Understanding (and Distinguishing) Common Algorithmic Fairness Metrics",
+    "section": "Equal False Positive Rates",
+    "text": "Equal False Positive Rates\nLike Predictive Parity, Equal False Positive Rates also equalizes prediction performance among only a subset of individuals. Per the Equal False Positive Rates metric, an algorithm is unfair if e probability that it mispredicts an individual whose true class is positive as negative is different between relevant groups, or written formally if:\n\\[\\mathbb{P}(\\mathrm{Pred.~Class = 1|~True~Class = 0,~Group = A}) \\neq \\mathbb{P}(\\mathrm{Pred.~Class = 1|~True~Class = 0,~Group = B})\\]\nHere, the goal of Equal False Positive Rates is to prevent an algorithm from"
+  },
+  {
+    "objectID": "blogs/understanding-fairness-metrics.html#equal-false",
+    "href": "blogs/understanding-fairness-metrics.html#equal-false",
+    "title": "Understanding (and Distinguishing) Common Algorithmic Fairness Metrics",
+    "section": "3 Equal False",
+    "text": "3 Equal False"
+  },
+  {
+    "objectID": "blogs/understanding-fairness-metrics.html#equal-false-negative-rates",
+    "href": "blogs/understanding-fairness-metrics.html#equal-false-negative-rates",
+    "title": "Understanding (and Distinguishing) Common Algorithmic Fairness Metrics",
+    "section": "Equal False Negative Rates",
+    "text": "Equal False Negative Rates\nAlong a similar vein to Equal False Positive Rates is Equal False Negative Rates, which says that an algorithm is unfair if the probability that it mispredicts an individual whose true class is negative as positive is different between relevant groups. That is:\n\\[\\mathbb{P}(\\mathrm{Pred.~Class = 0|~True~Class = 1,~Group = A}) \\neq \\mathbb{P}(\\mathrm{Pred.~Class = 0|~True~Class = 1,~Group = B})\\]"
+  },
+  {
+    "objectID": "blogs/understanding-fairness-metrics.html#equalized-odds",
+    "href": "blogs/understanding-fairness-metrics.html#equalized-odds",
+    "title": "Understanding (and Distinguishing) Common Algorithmic Fairness Metrics",
+    "section": "Equalized Odds",
+    "text": "Equalized Odds\n\\[\\mathbb{P}(\\mathrm{Pred.~Class = 1|~True~Class = X,~Group = A}) \\neq \\mathbb{P}(\\mathrm{Pred.~Class = 1|~True~Class = X,~Group = B})\\] where \\(X \\in \\{0,1\\}\\)"
+  },
+  {
+    "objectID": "blogs/understanding-fairness-metrics.html#equal-accuracy",
+    "href": "blogs/understanding-fairness-metrics.html#equal-accuracy",
+    "title": "Understanding (and Distinguishing) Common Algorithmic Fairness Metrics",
+    "section": "Equal Accuracy",
+    "text": "Equal Accuracy\nPerhaps the most flat-footed algorithmic fairness metric is Equal Accuracy, which says that an algorithm is unfair if it has unequal accuracy across relevant groups. For instance, suppose we had two relevant groups, denoted as A and B. Then, according to Equal Accuracy, an algorithm is unfair if:2\n\\[\\mathbb{P}(\\mathrm{Pred.~Class = True~Class~|~Group = A}) \\neq \\mathbb{P}(\\mathrm{Pred.~Class = True~Class~|~Group = B})\\] which is to say, an algorithm is unfair when the probability that the predicted class is the same as the true class is different between relevant groups."
+  },
+  {
+    "objectID": "blogs/understanding-fairness-metrics.html#statistical-parity",
+    "href": "blogs/understanding-fairness-metrics.html#statistical-parity",
+    "title": "Understanding (and Distinguishing) Common Algorithmic Fairness Metrics",
+    "section": "Statistical Parity",
+    "text": "Statistical Parity"
+  },
+  {
+    "objectID": "blogs/understanding-fairness-metrics.html#some-key-terms",
+    "href": "blogs/understanding-fairness-metrics.html#some-key-terms",
+    "title": "Understanding (and Distinguishing) Common Algorithmic Fairness Metrics",
+    "section": "Some Key Terms",
+    "text": "Some Key Terms\n\nTrue Positives, False Positives, True Negatives, and False Negatives\n\n\n\n\nDiagram from Analytics Vidhya.\n\n\n\nMost fairness metrics for discrete prediction algorithms use some combination of true positives, true negatives, false positives, and false negatives in their calculations. A helpful way of visualizing the difference between terms is through a confusion matrix (like the one depicted for a binary prediction algorithm on the left). Notice how true positives, true negatives, false positives, and false negatives all rely on comparing an observation’s predicted class to its true (or actual) class. Specifically, a true positive (TP) is when observation’s true class and predicted class are both positive, and a false positive (FP) is when the observation’s true class is positive but its predicted class is not. On the other hand, a true negative (TN) is when observation’s true class and predicted class are both negative, and a false negative (FN) is when the observation’s true class is positive but its predicted class is not.\nAn Real-World Example: The Correctional Offender Management Profiling for Alternative Sanctions (COMPAS) algorithm is used in US courtrooms to assess the likelihood of a defendant becoming a recidivist (i.e. being re-convicted) by assigning each defendant a score between 1-10 based on their predicted likelihood of recidivism. A defendant is considered to have a low risk of recidivism if their COMPAS score is between 1-4 and medium to high risk of recidivism if their COMPAS score is between 5-10. In ProPublica’s seminal analysis of COMPAS, true positives, false positives, true negatives, and false negatives are defined as follows:1\n\nA true positive is when a defendant receives a COMPAS score between 5-10 and is re-convicted in the two years after they were scored.\nA false positive is when a defendant receives a COMPAS score between 5-10 but is not re-convicted in the two years after they were scored.\nA true negative is when a defendant receives a COMPAS score between 1-4 and is not re-convicted in the two years after they were scored.\nA false negative is when a defendant receives a COMPAS score between 1-4 but is re-convicted in the two years after they were scored.\n\n\n\nConditional Probability\nAnother important term to understand when talking about statistical fairness metrics is conditional probability which is the probability of an event some other event occurs. Let A and B be two events, where B has a non-zero probability of occurring, then the conditional probability of A given B (i.e. \\(\\mathbb{P}(A|B)\\)) can be calculated as follows:\n\\[\\mathbb{P}(A|B) = \\frac{\\mathbb{P}(A\\cap B)}{\\mathbb{P}(B)}\\]\nIn real-life, we rarely know the true probability of events occurring. Instead, one can estimate this probability empirically using the sample estimate of the probability. That is, one can find the proportion of times that both event A and event B occurred out of the total number of times event B occurred within the sample."
+  },
+  {
+    "objectID": "blogs/understanding-fairness-metrics.html#footnotes",
+    "href": "blogs/understanding-fairness-metrics.html#footnotes",
+    "title": "Understanding (and Distinguishing) Common Algorithmic Fairness Metrics",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nFrom the COMPAS example, can already see a point of contention in characterizing algorithmic fairness for discrete prediction problems, which is what threshold to use for decision-making. For example, why separate low from medium to high risk of recidivism at 4-5 rather than 3-4 or 5-6?↩︎\nYou might notice that in this notebook, I interpret each fairness metric as a necessary but not necessarily sufficient condition of algorithm fairness, meaning that an algorithm would be considered unfair if it does not satisfy X metric necessary for algorithmic fairness but it would not necessarily be fair if it does satisfy the required metric. This, in my opinion, is the most charitable way of interpreting the common statistical fairness metrics that I discuss in this notebook.↩︎"
+  },
+  {
+    "objectID": "blogs/understanding-fairness-metrics.html#demographicstatistical-parity",
+    "href": "blogs/understanding-fairness-metrics.html#demographicstatistical-parity",
+    "title": "Understanding (and Distinguishing) Common Algorithmic Fairness Metrics",
+    "section": "Demographic/Statistical Parity",
+    "text": "Demographic/Statistical Parity\n\\[\\mathbb{P}(\\mathrm{Pred.~Class = 1~|~Group = A}) \\neq \\mathbb{P}(\\mathrm{Pred.~Class = 1~|~Group = B})\\]"
+  },
+  {
+    "objectID": "blogs/understanding-fairness-metrics.html#predictive-parity-sometimes-also-called-equal-opportunity",
+    "href": "blogs/understanding-fairness-metrics.html#predictive-parity-sometimes-also-called-equal-opportunity",
+    "title": "Understanding (and Distinguishing) Common Algorithmic Fairness Metrics",
+    "section": "Predictive Parity (sometimes also called Equal Opportunity)",
+    "text": "Predictive Parity (sometimes also called Equal Opportunity)\nHowever, depending on the context of the algorithm, it might be more crucial from the perspective fairness to ensure that there is equal accuracy between groups among those predicted as part of the positive class, rather than simply guaranteeing that there is equal accuracy between the relevant groups in general (i.e., unconditioned on the individual’s predicted class). The fairness metric of Predictive Parity captures this concern. According to Predictive Parity, an algorithm is unfair between relevant groups A and B if:\n\\[\\mathbb{P}(\\mathrm{True~Class = 1|~Pred.~Class =1,~Group = A}) \\neq \\mathbb{P}(\\mathrm{True~Class = 1|~Pred.~Class = 1,~Group = B})\\] Notice how Predictive Parity relates to the algorithm’s Positive Predictive Value (PPV) or Precision. Specifically, when an algorithm satisfies Predictive Parity, we expect for the PPV for the relevant groups to be equal. That is for:\n\\[\\left( \\frac{TP + FN}{TP + FP} \\right)_\\mathrm{Group~=~A} = \\left( \\frac{TP + FN}{TP + FP} \\right)_\\mathrm{Group~=~B}\\] Sometimes, Predictive Parity is also referred to as the Equal Opportunity metric. ADD"
+  },
+  {
+    "objectID": "blogs/understanding-fairness-metrics.html#equal-ratios-of-false-positive-rates-to-false-negative-rates",
+    "href": "blogs/understanding-fairness-metrics.html#equal-ratios-of-false-positive-rates-to-false-negative-rates",
+    "title": "Understanding (and Distinguishing) Common Algorithmic Fairness Metrics",
+    "section": "Equal Ratios of False Positive Rates to False Negative Rates",
+    "text": "Equal Ratios of False Positive Rates to False Negative Rates\nA looser requirement for algorithmic fairness is Equal Ratios of False Positive Rates to False Negative Rates, which does not need neither Equal False Positive Rates nor Equal False Negative Rates between relevant groups. Putting together the formalizations of the two prior metrics, we get that an algorithm is unfair, according to Equal Ratios of False Positive Rates to False Negative Rates, if:\n\\[\\frac{\\mathbb{P}(\\mathrm{Pred.~Class = 1|~True~Class = 0,~Group = A})}{\\mathbb{P}(\\mathrm{Pred.~Class = 0|~True~Class = 1,~Group = A})} \\neq \\frac{\\mathbb{P}(\\mathrm{Pred.~Class = 1|~True~Class = 0,~Group = B})}{\\mathbb{P}(\\mathrm{Pred.~Class = 0|~True~Class = 1,~Group = B})}\\]\nOne reason why we might care about Equal Ratios of False Positive Rates to False Negative Rates for algorithmic fairness is because we care about the algorithm"
+  },
+  {
+    "objectID": "blogs/understanding-fairness-metrics.html#balance-for-positive-class",
+    "href": "blogs/understanding-fairness-metrics.html#balance-for-positive-class",
+    "title": "Understanding (and Distinguishing) Common Algorithmic Fairness Metrics",
+    "section": "Balance for Positive Class",
+    "text": "Balance for Positive Class"
+  },
+  {
+    "objectID": "blogs/understanding-fairness-metrics.html#balance-for-negative-class",
+    "href": "blogs/understanding-fairness-metrics.html#balance-for-negative-class",
+    "title": "Understanding (and Distinguishing) Common Algorithmic Fairness Metrics",
+    "section": "Balance for Negative Class",
+    "text": "Balance for Negative Class"
+  },
+  {
+    "objectID": "cv.html#publications-and-papers",
+    "href": "cv.html#publications-and-papers",
+    "title": "Curriculum Vitae",
+    "section": "Publications and Papers",
+    "text": "Publications and Papers\n\nColando, S. & Hardin, J. Selecting ChIP-Seq Normalization Methods from the Perspective of their Technical Conditions. Revise and Resubmit, 2025.\nColando, S. & Hardin, J. (2024). Philosophy within Data Science Ethics Courses. Journal of Statistics and Data Science Education, 32(4), 361–373. https://doi.org/10.1080/26939169.2024.2394542"
+  },
+  {
+    "objectID": "cv.html#publications-and-manuscripts",
+    "href": "cv.html#publications-and-manuscripts",
+    "title": "Curriculum Vitae",
+    "section": "Publications and Manuscripts",
+    "text": "Publications and Manuscripts\n\nColando, S. & Hardin, J. Selecting ChIP-Seq Normalization Methods from the Perspective of their Technical Conditions. Revise and Resubmit, 2025.\nColando, S. & Hardin, J. (2024). Philosophy within Data Science Ethics Courses. Journal of Statistics and Data Science Education, 32(4), 361–373. https://doi.org/10.1080/26939169.2024.2394542"
+  },
+  {
+    "objectID": "cv.html#grants",
+    "href": "cv.html#grants",
+    "title": "Curriculum Vitae",
+    "section": "Grants",
+    "text": "Grants\n\nColando, S. & Franke, E. Travel Grant 2025\nAmount: $500\nFunder: StatBytes, Carnegie Mellon Department of Statistics and Data Science\nColando, S. & Franke, E. data.table Ambassador Travel Grant 2025\nAmount: $2,700\nFunder: National Science Foundation (Award Abstract: #2303612)"
+  },
+  {
+    "objectID": "cv.html#other-research-experience",
+    "href": "cv.html#other-research-experience",
+    "title": "Curriculum Vitae",
+    "section": "Other Research Experience",
+    "text": "Other Research Experience\nPomona College Department of Mathematics and StatisticsResearch Assistant to Dr. Johanna Hardin May 2022 – Aug 2024\n\nAnalyzed between-sample normalization techniques by their technical assumptions to improve differential binding analysis practices for ChIP-Seq and similarly structured types of high-throughput data\nCreated reproducible ChIP-Seq read count simulations using R, Bash, and high-performance computing to examine how violating normalization method assumptions impacts the false discovery rate and power of identifying genomic regions with true differential DNA occupancy.\n\nData Science Ethics Independent Project (Supervisor: Dr. Johanna Hardin) May – Oct 2023\n\nSynthesized resources and pedagogies of existing Data Science Ethics undergraduate courses to connect key ethical concepts to data science practices\nCreated a website to effectively communicate data science ethics concepts and relevant background information to a broad community of decision-makers\nAided in Pomona College’s development of an ethics course for the recently approved data science minor\n\nCarnegie Mellon University Department of Statistics and Data ScienceResearch Assistant to Dr. Ron Yurko May – Aug 2023\n\nPerforming mixture-model clustering analysis to discover trends in movement patterns for injured racehorses\nIdentifying horses who under-raced through residual analysis of a created expected race count model\nEngaged in 8 weeks of lectures about popular statistical analysis techniques, data engineering, and novel data science methodologies employed in sports analytics\n\nSelf-Directed ProjectData Analysis and Visualization CreatorJan 2021 – May 2024\n\nConducting exploratory data analysis in R to improve data visualization and communication skills every week using data provided by the “R for Data Science” Online Learning Community\nHelping students new to R become more familiar with the programming language and troubleshoot errors in 2-hour Pomona TidyTuesday workshop offered each week\n\nUniversity of California, San Diego Halıcıoğlu Data Science Institute Intelligence, Data, Ethics, and Society (IDEAS) Summer Institute Participant Aug 2023\n\nParticipated in workshops taught by experts in domains like data science, AI, philosophy, and law to improve critical and interdisciplinary thinking on data science and AI ethics topics\nCollaborated with three other students on a two-week research project, examining practical methods of implementing responsible data science and AI practices in a California wildfire resource allocation algorithm\n\nUniversity of Michigan School of Public HealthBig Data Summer Institute Research Assistant to Dr. Nikola Banovic June – Aug 2022\n\nCollaborated with three other students to implement a partially Bayesian neural network to quantify and communicate prediction uncertainty in a supervised brain tumor segmentation model via Python’s PyTorch and TensorFlow packages\nParticipated in 6 weeks of lectures about ethical data collection practice in healthcare, probability and statistical theory, and the ethical implications of using statistics and computer science methods in healthcare settings"
+  }
+]

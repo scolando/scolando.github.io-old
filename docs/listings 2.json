@@ -1,0 +1,20 @@
+[
+  {
+    "listing": "/research.html",
+    "items": [
+      "/research/chip-seq/chip-seq.html",
+      "/research/tumor-mri/tumor-mri.html",
+      "/research/data-ethics/data-ethics.html",
+      "/research/horses/horses.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/blogs/grad-applications.html",
+      "/blogs/DA-exam-materials.html",
+      "/blogs/theory-review.html",
+      "/blogs/understanding-fairness-metrics.html"
+    ]
+  }
+]

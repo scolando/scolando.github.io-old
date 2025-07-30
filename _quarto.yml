@@ -12,22 +12,22 @@ website:
   
   
   navbar:
-    #logo: "personal-website-hex-sticker.png"
+    logo: "personal-website-hex-sticker.png"
     search: true
     right:
       - href: about.qmd
         text: "About"
       - href: research.qmd
         text: "Research"
-      - href: projects.qmd
-        text: "TidyTuesdays"
+      - href: teaching.qmd
+        text: "Teaching"
       - href: blog.qmd
         text: "Notebooks"
       - href: cv.qmd
         text: "CV"
     
   page-footer:
-    left: ""
+    left: "Sara Colando, 2024"
     right:
       - icon: github
         href: https://github.com/scolando/personal-website

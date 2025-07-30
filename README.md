@@ -1,1 +1,1 @@
-GitHub Repository for Personal Website created using Quarto: [https://scolando.github.io/](https://scolando.github.io/).
+GitHub Repository for Personal Website created using Quarto: [scolando.github.io/personal-website/](https://scolando.github.io/personal-website/).

@@ -1,9 +1,9 @@
 ---
 title: "Data Analysis Recipes"
-date: April 30, 2025
 format:
   html:
     toc: true
+    number-sections: true
 ---
 
 ## Linear Regression

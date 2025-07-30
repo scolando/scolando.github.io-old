@@ -1,0 +1,11 @@
+---
+title: "Notebooks"
+listing: 
+  contents: blogs/*
+  type: table
+  sort-ui: [title, date]
+  categories: true
+  fields: [title, date]
+---
+
+foo

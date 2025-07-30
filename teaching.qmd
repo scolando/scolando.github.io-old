@@ -1,0 +1,26 @@
+---
+title: "Teaching"
+format:
+  html:
+    toc: false
+---
+
+I really enjoy teaching statistics and data science, particularly at the undergraduate level. Additionally, I am fortunate to be involved in research related to statistics pedagogy, with a special focus on teaching statistics and data science in the era of big data and generative AI.
+
+## Teaching Experience
+
+**Teaching Assistant:**
+
+- *Carnegie Mellon Sports Analytics Camp*; co-taught four lectures to REU students (Summer 2025)
+
+- *36-226: Introduction to Statistical Inference*; Head TA (Spring 2025)
+
+- *36-600: Overview of Statistical Learning and Modeling* (Fall 2024)
+
+## Teaching-Related Research
+
+- *Analyzing Statistics Students' Writing Before and After the Emergence of Large Language Models*; more information on the project is available [here](research/student-llms/students-llms.qmd) (presented at the Research Satellite poster session during USCOTS 2025). 
+
+- *Teaching Data Cleaning and Wrangling with R’s data.table Package*; materials and efficacy results are available via [GitHub](https://github.com/efranke22/datatable_final_materials) (presented at Posters and Beyond during USCOTS 2025).
+
+- *Philosophy within Data Science Ethics Courses*; published in the Journal of Statistics and Data Science Education; the full paper is available is available [here](https://doi.org/10.1080/26939169.2024.2394542) (published October 2024).

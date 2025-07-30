@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-author','listing-date','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-author','listing-title','listing-description','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
       searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
     };
@@ -160,8 +160,8 @@ window.Quarto = {
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
-<span class="menu-text">TidyTuesdays</span></a>
+    <a class="nav-link" href="./teaching.html"> 
+<span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./blog.html"> 
@@ -214,59 +214,81 @@ window.Quarto = {
 </section>
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1651377600000" data-listing-file-modified-sort="1749487055711" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="317">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1751342400000" data-listing-file-modified-sort="1753539519789" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="394">
 <div class="thumbnail">
-<p><a href="./research/chip-seq/chip-seq.html" class="no-external"></a></p><a href="./research/chip-seq/chip-seq.html" class="no-external">
-<p class="card-img-top"><img src="research/chip-seq/FTT-4-rep.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./research/chip-seq/chip-seq.html" class="no-external"></a></p>
+<p><a href="./research/student-llms/students-llms.html" class="no-external"></a></p><a href="./research/student-llms/students-llms.html" class="no-external">
+<p class="card-img-top"><img src="research/student-llms/yearly.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./research/student-llms/students-llms.html" class="no-external"></a></p>
 </div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./research/chip-seq/chip-seq.html" class="no-external">Selecting ChIP-Seq Normalization Methods from the Perspective of their Technical Conditions</a>
+<a href="./research/student-llms/students-llms.html" class="no-external">Analyzing Statistics Students’ Writing Before and After the Emergence of Large Language Models</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./research/chip-seq/chip-seq.html" class="no-external"></a>
+<a href="./research/student-llms/students-llms.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<a href="./research/chip-seq/chip-seq.html" class="no-external"><strong>Overview:</strong> Within the last two decades, high throughput sequencing has become one of the most popular methods for data generation within genomics, epigenomics, and…</a>
+<a href="./research/student-llms/students-llms.html" class="no-external"><strong>Overview:</strong> The use of Large Language Models (LLMs) has become ubiquitous in academic settings, particularly in written assignments <span class="citation" data-cites="Baek2024">(Baek et al., 2024)</span>. <span class="citation" data-cites="Reinhart2025">Reinhart et al. (2025)</span> …<sup></sup><em></em><span class="citation" data-cites="Brown2024"></span><em></em><em></em><em></em><em></em><em></em><em></em><em></em><sup></sup></a>
 </div>
 </div>
 <div class="metadata">
-<a href="./research/chip-seq/chip-seq.html" class="no-external">
+<a href="./research/student-llms/students-llms.html" class="no-external">
 <div class="listing-date">
-May 1, 2022
+Jul 1, 2025
 </div>
 <div class="listing-author">
-Sara Colando, Jo Hardin
+Sara Colando, Erin Franke
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1656648000000" data-listing-file-modified-sort="1749487055719" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="386">
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1688184000000" data-listing-file-modified-sort="1749487055713" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="136">
 <div class="thumbnail">
-<p><a href="./research/tumor-mri/tumor-mri.html" class="no-external"></a></p><a href="./research/tumor-mri/tumor-mri.html" class="no-external">
-<p class="card-img-top"><img src="research/tumor-mri/featured.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./research/tumor-mri/tumor-mri.html" class="no-external"></a></p>
+<p><a href="./research/horses/horses.html" class="no-external"></a></p><a href="./research/horses/horses.html" class="no-external">
+<p class="card-img-top"><img src="research/horses/featured.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./research/horses/horses.html" class="no-external"></a></p>
 </div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./research/tumor-mri/tumor-mri.html" class="no-external">Implementing a Partially Bayesian Neural Network for Brain Tumor Segmentation</a>
+<a href="./research/horses/horses.html" class="no-external">Clustering Race Horse Movement Profiles to Discover Trends in Injured Horses</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./research/tumor-mri/tumor-mri.html" class="no-external"></a>
+<a href="./research/horses/horses.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<a href="./research/tumor-mri/tumor-mri.html" class="no-external"><strong>Overview</strong>: Radiologists segment tumors from MRI scans to determine treatment plans such as surgical resection or radiation therapy, whereas neural networks can streamline the…</a>
+<a href="./research/horses/horses.html" class="no-external"><strong>Overview</strong>: Between 2009 and 2021, over 7,200 horses died or were euthanized due to racing-related injuries. Using horse profile data and horse tracking data from the NYRA, we…</a>
 </div>
 </div>
 <div class="metadata">
-<a href="./research/tumor-mri/tumor-mri.html" class="no-external">
+<a href="./research/horses/horses.html" class="no-external">
 <div class="listing-date">
-Jul 1, 2022
+Jul 1, 2023
 </div>
 <div class="listing-author">
-Claire Chu, Sara Colando, Dhruba Nandi, Xavier Serrano
+Sara Colando, Jonathan Pipping, Kristopher Wilson
 </div>
 </a>
 </div>
@@ -299,30 +321,58 @@ Sara Colando, Jo Hardin
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1688184000000" data-listing-file-modified-sort="1749487055713" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="136">
+<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1656648000000" data-listing-file-modified-sort="1749487055719" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="386">
 <div class="thumbnail">
-<p><a href="./research/horses/horses.html" class="no-external"></a></p><a href="./research/horses/horses.html" class="no-external">
-<p class="card-img-top"><img src="research/horses/featured.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./research/horses/horses.html" class="no-external"></a></p>
+<p><a href="./research/tumor-mri/tumor-mri.html" class="no-external"></a></p><a href="./research/tumor-mri/tumor-mri.html" class="no-external">
+<p class="card-img-top"><img src="research/tumor-mri/featured.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./research/tumor-mri/tumor-mri.html" class="no-external"></a></p>
 </div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./research/horses/horses.html" class="no-external">Clustering Race Horse Movement Profiles to Discover Trends in Injured Horses</a>
+<a href="./research/tumor-mri/tumor-mri.html" class="no-external">Implementing a Partially Bayesian Neural Network for Brain Tumor Segmentation</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./research/horses/horses.html" class="no-external"></a>
+<a href="./research/tumor-mri/tumor-mri.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-<a href="./research/horses/horses.html" class="no-external"><strong>Overview</strong>: Between 2009 and 2021, over 7,200 horses died or were euthanized due to racing-related injuries. Using horse profile data and horse tracking data from the NYRA, we…</a>
+<a href="./research/tumor-mri/tumor-mri.html" class="no-external"><strong>Overview</strong>: Radiologists segment tumors from MRI scans to determine treatment plans such as surgical resection or radiation therapy, whereas neural networks can streamline the…</a>
 </div>
 </div>
 <div class="metadata">
-<a href="./research/horses/horses.html" class="no-external">
+<a href="./research/tumor-mri/tumor-mri.html" class="no-external">
 <div class="listing-date">
-Jul 1, 2023
+Jul 1, 2022
 </div>
 <div class="listing-author">
-Sara Colando, Jonathan Pipping, Kristopher Wilson
+Claire Chu, Sara Colando, Dhruba Nandi, Xavier Serrano
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1651377600000" data-listing-file-modified-sort="1749487055711" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="317">
+<div class="thumbnail">
+<p><a href="./research/chip-seq/chip-seq.html" class="no-external"></a></p><a href="./research/chip-seq/chip-seq.html" class="no-external">
+<p class="card-img-top"><img src="research/chip-seq/FTT-4-rep.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./research/chip-seq/chip-seq.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./research/chip-seq/chip-seq.html" class="no-external">Selecting ChIP-Seq Normalization Methods from the Perspective of their Technical Conditions</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./research/chip-seq/chip-seq.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./research/chip-seq/chip-seq.html" class="no-external"><strong>Overview:</strong> Chromatin immunoprecipitation with high-throughput sequencing (ChIP-seq) provides vital insights into both the genomic location occupied by the protein of interest…<em></em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./research/chip-seq/chip-seq.html" class="no-external">
+<div class="listing-date">
+May 1, 2022
+</div>
+<div class="listing-author">
+Sara Colando, Jo Hardin
 </div>
 </a>
 </div>
@@ -756,7 +806,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Made by Sara Colando,<br>May 2024</p>
+<p>Sara Colando, 2024</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

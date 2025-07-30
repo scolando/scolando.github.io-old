@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Sara Colando, Jo Hardin">
-<meta name="dcterms.date" content="2022-05-01">
+<meta name="author" content="Sara Colando, Danae Schulz, Jo Hardin">
+<meta name="dcterms.date" content="2025-05-01">
 
-<title>Sara Colando – Selecting ChIP-Seq Normalization Methods from the Perspective of their Technical Conditions</title>
+<title>Sara Colando – Selecting ChIP-seq Normalization Methods from the Perspective of their Technical Conditions</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -101,8 +101,8 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../projects.html"> 
-<span class="menu-text">TidyTuesdays</span></a>
+    <a class="nav-link" href="../../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../blog.html"> 
@@ -130,19 +130,19 @@ ul.task-list li input[type="checkbox"] {
     <div class="entity-contents">
       <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Selecting ChIP-Seq Normalization Methods from the Perspective of their Technical Conditions</h1>
+<h1 class="title">Selecting ChIP-seq Normalization Methods from the Perspective of their Technical Conditions</h1>
 </div>
 <div class="quarto-title-meta">
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Sara Colando, Jo Hardin </p>
+             <p>Sara Colando, Danae Schulz, Jo Hardin </p>
           </div>
   </div>
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 1, 2022</p>
+      <p class="date">May 1, 2025</p>
     </div>
   </div>
   </div>
@@ -157,11 +157,12 @@ ul.task-list li input[type="checkbox"] {
 </div>
       <div class="about-contents"><main class="content" id="quarto-document-content">
 <p><img src="FTT-4-rep.png" class="img-fluid"></p>
-<p><strong>Overview:</strong> Within the last two decades, high throughput sequencing has become one of the most popular methods for data generation within genomics, epigenomics, and transcriptomics. A popular method of high throughput sequencing is chromatin immunoprecipitation followed by high throughput sequencing, or ChIP-Seq. ChIP-Seq data provides vital insights into locations on the genome where there are differences in DNA occupancy between experimental states (i.e., differential DNA occupancy). However, since ChIP-Seq data is collected experimentally, it must be normalized to assess which genomic regions have differential DNA occupancy. While normalization is an essential step in identifying genomic regions with differential DNA occupancy, the primary technical conditions underlying ChIP-Seq normalization methods have yet to be specifically examined in the academic literature. In this thesis, we identify three primary technical conditions underlying ChIP-Seq between-sample normalization methods: (1) Symmetric Differential DNA Occupancy, (2) Equal Amount of Total DNA Occupancy across Experimental States, and (3) Equal Amount of Total Background Binding across Experimental States. We then categorize commonly-used ChIP-Seq normalization methods based on the technical conditions they use to normalize between experimental states. A major contribution of this thesis is our ChIP-Seq read count simulation results, which validate our categorization of the normalization methods by their technical conditions. We conclude by underscoring how our findings demonstrate that not all normalization methods are equally effective on all kinds of ChIP-Seq data. Rather, researchers should use their understanding of the ChIP-Seq experiment at hand to guide their choice of normalization method when possible or try mulitiple between-sample ChIP-Seq normalization methods to create a ‘high-confidence’ peakset which contains peaks that are less sensitive to one’s choice of normalization method.</p>
+<p><strong>Overview:</strong> Chromatin immunoprecipitation with high-throughput sequencing (ChIP-seq) provides vital insights into both the genomic location occupied by the protein of interest and the difference in DNA occupancy between experimental states. Given that ChIP-seq data is collected experimentally, an important step for determining regions with differential DNA occupancy between states is between-sample normalization. While between-sample normalization is crucial for downstream differential binding analysis, the technical conditions underlying between-sample normalization methods have yet to be specifically examined for ChIP-seq. In this article, we identify three important technical conditions underlying ChIP-seq between-sample normalization methods: balanced differential DNA occupancy, equal total DNA occupancy between experimental states, and equal background binding across states. To illustrate the importance of satisfying the selected normalization method’s technical conditions for downstream differential binding analysis, we simulate ChIP-seq read count data where different combinations of the technical conditions are violated. We then externally verify our simulation results using CUT&amp;RUN and ChIP-seq experimental data. Based on our findings, we suggest that researchers use their understanding of the ChIP-seq experiment at hand to guide their choice of between-sample normalization method when possible. Alternatively, researchers can use a <em>high-confidence</em> peakset, which is the intersection of the differentially bound peaksets obtained from using different between-sample normalization methods. In our two experimental analyses, roughly half of the called peaks were called as differentially bound for every normalization method. These high-confidence peaks are less sensitive to one’s choice of between-sample normalization method, and thus could be a more robust basis for identifying genomic regions with differential DNA occupancy between experimental states when there is uncertainty about which technical conditions are satisfied.}</p>
 <ul>
-<li>Senior Thesis PDF on <a href="Colando_MATH191_Thesis_Final_Draft.pdf" target="_blank">Selecting ChIP-Seq Normalization Methods from the Perspective of their Technical Conditions</a>, advised by Jo Hardin.</li>
+<li><p>Our paper on “Selecting ChIP-seq Normalization Methods from the Perspective of their Technical Conditions” was recently accepted in <em>Briefings in Bioinformatics</em> in July 2025.</p></li>
+<li><p>Math Senior Thesis on <a href="Colando_MATH191_Thesis_Final_Draft.pdf" target="_blank">Selecting ChIP-Seq Normalization Methods from the Perspective of their Technical Conditions</a>, advised by Jo Hardin.</p></li>
 </ul>
-<p><em>Funded by Pomona College’s The Class of 1971 Summer Undergraduate Research Fund (Summer 2022) and the Kenneth Cooke Summer Research Fellowship (Summer 2024).</em></p>
+<p><em>S.C. was supported in part by grants from the Pomona College SURP program and Kenneth Cooke Summer Research Fellowship. D.S. was supported in part by NSF CAREER grant 2041395. J.H. was supported in part by NIH GM112625.</em></p>
 
 
 </main></div>
@@ -586,7 +587,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Made by Sara Colando,<br>May 2024</p>
+<p>Sara Colando, 2024</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

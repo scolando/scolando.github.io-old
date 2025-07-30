@@ -6,9 +6,11 @@ format:
     toc: false
 listing: 
   contents: research
+  sort-ui: [title, date]
+  filter-ui: true
   type: default
-  sort: date
-  fields: [image, title, author, date, description]
+  sort: 'date desc'
+  fields: [date, author, title, description, image]
 ---
 
 ## Research Projects

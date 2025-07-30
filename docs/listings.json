@@ -2,16 +2,21 @@
   {
     "listing": "/research.html",
     "items": [
-      "/research/chip-seq/chip-seq.html",
-      "/research/tumor-mri/tumor-mri.html",
+      "/research/student-llms/students-llms.html",
+      "/research/horses/horses.html",
       "/research/data-ethics/data-ethics.html",
-      "/research/horses/horses.html"
+      "/research/tumor-mri/tumor-mri.html",
+      "/research/chip-seq/chip-seq.html"
     ]
   },
   {
     "listing": "/blog.html",
     "items": [
-      "/blogs/DA-exam-materials.html"
+      "/blogs/grad-applications.html",
+      "/blogs/understanding-fairness-metrics.html",
+      "/blogs/DA-exam-materials.html",
+      "/blogs/theory-review.html",
+      "/blogs/projects.html"
     ]
   }
 ]
