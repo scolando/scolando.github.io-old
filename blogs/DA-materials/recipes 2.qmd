@@ -1,0 +1,180 @@
+---
+title: "Data Analysis Recipes"
+format:
+  html:
+    toc: true
+    number-sections: true
+---
+
+## Linear Regression
+
+For the linear regression model $\mathbf{Y} = \mathbf{X}\beta + e$, we have the following assumptions:\
+
+(1) Errors have mean 0: $\mathbb{E}[Y \mid X] = 0$\
+(2) The error variance is constant: $\text{Var}[e \mid \mathbf{X}] = \sigma^2$\
+(3) The errors are uncorrelated (the data points are iid): $\text{Var}[e \mid \mathbf{X}] = \sigma^2$\
+(4) The errors are normally distributed
+
+**Steps:**
+
+(1) Fit model (consider interactions, non-linear patterns seen in EDA, confounding variables, transformations)\
+(2) Partial residual analysis to account for any remaining non-linearity, adjusting the model as needed \[diagnostic for non-linearity\]\
+(3) Plot residuals against fitted values; look for heteroskedasticity and use sandwich estimator for all inference if present \[diagnostic for constant error variance and errors have mean zero\]\
+(4) Plot Q-Q plot to check if there are any gross deviations from normality \[diagnostic for normally distributed errors; not a big deal if the sample size is large\]
+(5) Check for how outliers identified during EDA impact on coefficients via Cook's Distance\
+(6) Check for collinearity issues using EDA and VIF scores\
+(7) If we included spline or polynomial terms, conduct an F test and create effect plots, with example interpretations that include confidence intervals\
+(8) Otherwise, for linear terms, conduct a t test and provide test statistic, p-value, and confidence interval\
+(9) If sample size is small, make a statement about power\
+(10) Limitations:
+     -   Unaccounted for correlation/repeated measures (lack of independence)
+     -   Unmeasured confounders
+     -   Dichotomized confounders
+     -   Non-random missingness
+     -   Sample demographics versus population of interest
+     -   Statistical versus practical significance\
+
+## Logistic Regression
+
+For the logistic regression model $\log(\text{odds}(\mathbf{Y})) = \mathbf{X}\beta$, we have the following assumptions:\
+
+(1) Log-odds of $Y$ are linearly related to the regressors $X$\
+(2) The observations $Y_i$ are conditionally independent of each other given the covariates $X_i$
+
+**Steps**
+
+(1) Fit model (consider interactions, non-linear patterns seen in EDA, confounding variables, transformations)\
+(2) Partial residual analysis to account for any remaining non-linearity with log-odds, adjusting the model as needed \[diagnostic for non-linearity between log-odds and regressors\]\
+(3) Plot randomized quantile residuals and corresponding Q-Q plot (with uniform distribution) for each predictor \[second diagnostic for non-linearity between log-odds and regressors\]\
+(4) Optionally, create a calibration plot and randomized quantile residuals against fitted values\
+(5) Check for how outliers identified during EDA impact on coefficients via Cook's Distance\
+(6) Check for collinearity issues using EDA and VIF scores\
+(7) If we included spline or polynomial terms, conduct a deviance test and create effect plots, with example interpretations that include confidence intervals (*ensure it is on response scale, i.e., not log-odds*)\
+(8) Otherwise, for linear terms, conduct a Wald test and provide test statistic ($z$), p-value, and confidence interval (*exponentiate!*)\
+(9) If sample size is small, make a statement about power\
+(10) Limitations:
+     -   Unaccounted for correlation/repeated measures (lack of independence)
+     -   Unmeasured confounders
+     -   Dichotomized confounders
+     -   Non-random missingness
+     -   Sample demographics versus population of interest
+     -   Statistical versus practical significance
+     -   If cohort study think about which type: prospective, retrospective, case-control
+
+## Binomial Regression
+
+For the binomial regression model $n_iY_i \mid X_i = x_i \sim \text{Binomial}(n_i, \log(\text{odds}(x_i\beta)))$. We use binomial regression when we have a fixed number of trials, with each observation consisting of a number of successes and total number of trials (so we can infer failures). In binomial regression, we have the following assumptions:\
+(1)The observations are conditionally independent given $X$\
+(2) The response variable follows a binomial distribution\
+(3) The mean of the response variable is related to the predictors through the logit link and functional form \[We want a linear relationship between the predictor and the log-odds of the rate, $Y_i$\]:
+
+$$\log \left( \frac{rate}{1 - rate} \right)$$
+
+**Steps:**
+
+(1) Fit model (consider interactions, non-linear patterns seen in EDA, confounding variables, transformations)\
+(2) Partial residual analysis to account for any remaining non-linearity with log-odds, adjusting the model as needed \[diagnostic for non-linearity between log-odds and regressors\]\
+(3) Plot randomized quantile residuals and corresponding Q-Q plot (with uniform distribution) for each predictor \[second diagnostic for non-linearity between log-odds and regressors\]\
+(4) Check for overdispersion using Q-Q plot from fitted. If there is evidence of overdispersion, move to *quasi-GLM section*
+(5) Check for how outliers identified during EDA impact on coefficients via Cook's Distance\
+(6) Check for collinearity issues using EDA and VIF scores\
+(7) If we included spline or polynomial terms, conduct a deviance test and create effect plots, with example interpretations that include confidence intervals (*ensure it is on response scale, i.e., not log-odds*)
+(8) Otherwise, for linear terms, conduct a Wald test and provide test statistic ($z$), p-value, and confidence interval (*exponentiate!*)\
+(9) If sample size is small, make a statement about power\
+(10) Limitations:
+     -   Unaccounted for correlation (spatiotemporal), dependence of successive trials (e.g., success in one, increases probability of success in another)
+     -   Unmeasured confounders
+     -   Dichotomized confounders
+     -   Non-random missingness
+     -   Sample demographics versus population of interest
+     -   Statistical versus practical significance
+     -   If cohort study think about which type: prospective, retrospective, case-control
+
+## Poisson Regression
+
+When certain event that occurs with a fixed rate, and the events are independent (so that the occurrence of one event does not make another more or less likely), then the count of events over a fixed period of time will be Poisson-distributed. For the Poisson regression model $\mathbb{E}[Y \mid X = x] = \exp(\beta^\intercal x)$, we have the following assumptions:
+
+(1)The observations are conditionally independent given $X$\
+(2) The response variable follows a Poisson distribution\
+(3) The mean of the response variable is related to the predictors through the log link and functional form \[We want a linear relationship between the predictor and the log mean of the outcome, either rate or count\]
+
+**Steps:**
+
+(1) Fit model (consider interactions, non-linear patterns seen in EDA, confounding variables, transformations)\
+    (1b) Consider whether an offset is needed. Used in cases where the counts are from different time period lengths or popualtion sizes\
+
+(2) Partial residual analysis to account for any remaining non-linearity with log mean outcome, adjusting the model as needed \[diagnostic for non-linearity between log mean outcome and regressors\]\
+
+(3) Plot randomized quantile residuals and corresponding Q-Q plot (with uniform distribution) for each predictor \[second diagnostic for non-linearity between log mean outcome and regressors\]\
+
+(4) Check for overdispersion using Q-Q plot from fitted. If there is evidence of overdispersion, move to *quasi-GLM section*\
+
+(5) Check for how outliers identified during EDA impact on coefficients via Cook's Distance\
+
+(6) Check for collinearity issues using EDA and VIF scores\
+
+(7) If we included spline or polynomial terms, conduct a deviance test and create effect plots, with example interpretations that include confidence intervals (*ensure it is on response scale, i.e., not log scale*)
+
+(8) Otherwise, for linear terms, conduct a Wald test and provide test statistic ($z$), p-value, and confidence interval (*exponentiate!*)\
+
+(9) If sample size is small, make a statement about power\
+
+(10) Limitations:
+
+     -   Unaccounted for correlation (spatiotemporal), dependence between events, and non-fixed rate of occurence
+     -   Insufficient data to include an offset term
+     -   Unreasonable approximation of count data as Poisson -- could assign non-trivial probability to impossible counts
+     -   Unmeasured confounders
+     -   Dichotomized confounders
+     -   Non-random missingness
+     -   Sample demographics versus population of interest
+     -   Statistical versus practical significance
+     -   If cohort study think about which type: prospective, retrospective, case-control
+
+## Quasi-GLM Regression
+
+Quasi-GLM models are when there is overdispersion (or underdispersion) in the standard Binomial or Poisson regression model.
+
+Notably, overdispersion is when there is more variance in $Y$ than the response distribution would predict. This could be due to:
+
+-   Insufficient predictors. That is, there might be other factors associated with the expected value of $Y$ that we do not observe
+
+-   There might be correlations we did not account for (e.g., a binomial distribution assumes the $n$ trials are independent but what if success in one is correlated with increased success in the others?)
+
+**Steps:**
+
+(1) Fit the quasi-GLM model (using the regressors determined from the standard Binomial or Poisson regression model)\
+(2) Confirm linear relationships/goodness-of-fit with partial residual plot (should be same to above with perhaps wider variance bands)\
+(3) Based we no have a proper likelihood function, we cannot check our model with randomized quantile residuals
+(4) Check for how outliers identified during EDA impact on coefficients via Cook's Distance\
+(5) Check for collinearity issues using EDA and VIF scores\
+(6) If we included spline or polynomial terms, we can no longer conduct deviance tests. We can still use effect plots with example interpretations that include confidence intervals (*ensure it is on response scale, i.e., not log-odds or log scale*)
+(7) Otherwise, for linear terms, conduct a Wald test and provide test statistic ($z$), p-value, and confidence interval (*exponentiate!*); these coefficient estimates should be the same but the confidence interval should have a different width\
+(8) If sample size is small, make a statement about power\
+(9) Limitations:
+    -   Cannot test for significance of spline or polynomial terms
+    -   Unaccounted for correlation (spatiotemporal), dependence of successive trials (e.g., success in one, increases probability of success in another), dependence between events, and non-fixed rate of occurence
+    -   Insufficient data to include an offset term
+    -   Unreasonable approximation of count data as Poisson -- could assign non-trivial probability to impossible counts
+    -   Unmeasured confounders
+    -   Dichotomized confounders
+    -   Non-random missingness
+    -   Sample demographics versus population of interest
+    -   Statistical versus practical significance
+    -   If cohort study think about which type: prospective, retrospective, case-control
+
+## Prediction
+
+We want to use ridge regression for high-dimensional data, where we have highly collinear predictors (since it promites sharing effects) and lasso for high-dimensional data, where we want sparsity.
+
+**Steps:**
+
+(1) Split the data into test and training sets trying as much as possible to avoid data leakage (e.g., keep repeated measures together if possible)\
+(2) Create model matrix of covariates for testing and training data\
+(3) Cross validate to select penalization parameter $\lambda$ using the training data\
+(4) Fit model on full training data using cross-validated penalization parameter -- *make sure to specify the correct distribution family based on outcome. Note it is gaussian by default.*\
+    (4b) If doing classification, pick the threshold for positive versus negative class using ROC curve where it is closest to top left\
+(5) Predict on the test data and calculate (R)MSE to assess overall predictive performance (*if binary compare accuracy to incidence rate*)\
+    -   RMSE: a measure of the average magnitude of the errors between predicted and actual values in a regression model\
+(6) If classification, also compute sensitivity and specificity and/or AUC to show relative performance on positive and negative classes\
+(7) If continuous outcome, plot actual versus predicted values (*ideal predictive model would like along slope = 1, intercept = 0 line*)

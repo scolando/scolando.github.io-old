@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Sara Colando, Jo Hardin">
-<meta name="dcterms.date" content="2024-10-01">
 
-<title>Sara Colando – Philosophy within Data Science Ethics Courses</title>
+<title>Sara Colando – Data Analysis Recipes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -36,6 +34,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
@@ -69,10 +68,39 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -123,55 +151,272 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#linear-regression" id="toc-linear-regression" class="nav-link active" data-scroll-target="#linear-regression"><span class="header-section-number">1</span> Linear Regression</a></li>
+  <li><a href="#logistic-regression" id="toc-logistic-regression" class="nav-link" data-scroll-target="#logistic-regression"><span class="header-section-number">2</span> Logistic Regression</a></li>
+  <li><a href="#binomial-regression" id="toc-binomial-regression" class="nav-link" data-scroll-target="#binomial-regression"><span class="header-section-number">3</span> Binomial Regression</a></li>
+  <li><a href="#poisson-regression" id="toc-poisson-regression" class="nav-link" data-scroll-target="#poisson-regression"><span class="header-section-number">4</span> Poisson Regression</a></li>
+  <li><a href="#quasi-glm-regression" id="toc-quasi-glm-regression" class="nav-link" data-scroll-target="#quasi-glm-regression"><span class="header-section-number">5</span> Quasi-GLM Regression</a></li>
+  <li><a href="#prediction" id="toc-prediction" class="nav-link" data-scroll-target="#prediction"><span class="header-section-number">6</span> Prediction</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<div class="quarto-about-solana column-body">
-  <div class="about-entity">
-    <div class="entity-contents">
-      <header id="title-block-header" class="quarto-title-block default">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Philosophy within Data Science Ethics Courses</h1>
+<h1 class="title">Data Analysis Recipes</h1>
 </div>
+
+
+
 <div class="quarto-title-meta">
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Sara Colando, Jo Hardin </p>
-          </div>
+
+    
+  
+    
   </div>
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">October 1, 2024</p>
-    </div>
-  </div>
-  </div>
-</header> <div class="about-links">
-  <a href="https://doi.org/10.1080/26939169.2024.2394542" class="about-link" rel="" target="">
-     <span class="about-link-text">Paper</span>
-  </a>
-  <a href="https://scolando.github.io/data-science-ethics/" class="about-link" rel="" target="">
-     <span class="about-link-text">Website</span>
-  </a>
-  <a href="https://github.com/scolando/data-science-ethics" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github Repo</span>
-  </a>
-</div>
-      <div class="about-contents"><main class="content" id="quarto-document-content">
-<p><img src="featured.png" class="img-fluid"></p>
-<p><strong>Overview</strong>: There is wide agreement that ethical considerations are a valuable aspect of a data science curriculum, and to that end, many data science programs offer courses in data science ethics. There are not always, however, explicit connections between data science ethics and the centuries-old work on ethics within the discipline of philosophy. Here, we present a framework for bringing together key data science practices with ethical topics. The ethical topics were collated from sixteen data science ethics courses with public-facing syllabi and reading lists. We encourage individuals who are teaching data science ethics to engage with the philosophical literature and its connection to current data science practices, which is rife with potentially morally charged decision points.</p>
+  
+
+
+</header>
+
+
+<section id="linear-regression" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="linear-regression"><span class="header-section-number">1</span> Linear Regression</h2>
+<p>For the linear regression model <span class="math inline">\(\mathbf{Y} = \mathbf{X}\beta + e\)</span>, we have the following assumptions:<br>
+</p>
+<ol type="1">
+<li>Errors have mean 0: <span class="math inline">\(\mathbb{E}[Y \mid X] = 0\)</span><br>
+</li>
+<li>The error variance is constant: <span class="math inline">\(\text{Var}[e \mid \mathbf{X}] = \sigma^2\)</span><br>
+</li>
+<li>The errors are uncorrelated (the data points are iid): <span class="math inline">\(\text{Var}[e \mid \mathbf{X}] = \sigma^2\)</span><br>
+</li>
+<li>The errors are normally distributed</li>
+</ol>
+<p><strong>Steps:</strong></p>
+<ol type="1">
+<li>Fit model (consider interactions, non-linear patterns seen in EDA, confounding variables, transformations)<br>
+</li>
+<li>Partial residual analysis to account for any remaining non-linearity, adjusting the model as needed [diagnostic for non-linearity]<br>
+</li>
+<li>Plot residuals against fitted values; look for heteroskedasticity and use sandwich estimator for all inference if present [diagnostic for constant error variance and errors have mean zero]<br>
+</li>
+<li>Plot Q-Q plot to check if there are any gross deviations from normality [diagnostic for normally distributed errors; not a big deal if the sample size is large]</li>
+<li>Check for how outliers identified during EDA impact on coefficients via Cook’s Distance<br>
+</li>
+<li>Check for collinearity issues using EDA and VIF scores<br>
+</li>
+<li>If we included spline or polynomial terms, conduct an F test and create effect plots, with example interpretations that include confidence intervals<br>
+</li>
+<li>Otherwise, for linear terms, conduct a t test and provide test statistic, p-value, and confidence interval<br>
+</li>
+<li>If sample size is small, make a statement about power<br>
+</li>
+<li>Limitations:
 <ul>
-<li><strong>Colando, S.</strong>, &amp; Hardin, J. (2024). Philosophy within Data Science Ethics Courses. <em>Journal of Statistics and Data Science Education</em>, <em>32</em>(4), 361–373. <a href="https://doi.org/10.1080/26939169.2024.2394542" class="uri">https://doi.org/10.1080/26939169.2024.2394542</a></li>
+<li>Unaccounted for correlation/repeated measures (lack of independence)</li>
+<li>Unmeasured confounders</li>
+<li>Dichotomized confounders</li>
+<li>Non-random missingness</li>
+<li>Sample demographics versus population of interest</li>
+<li>Statistical versus practical significance<br>
+</li>
+</ul></li>
+</ol>
+</section>
+<section id="logistic-regression" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="logistic-regression"><span class="header-section-number">2</span> Logistic Regression</h2>
+<p>For the logistic regression model <span class="math inline">\(\log(\text{odds}(\mathbf{Y})) = \mathbf{X}\beta\)</span>, we have the following assumptions:<br>
+</p>
+<ol type="1">
+<li>Log-odds of <span class="math inline">\(Y\)</span> are linearly related to the regressors <span class="math inline">\(X\)</span><br>
+</li>
+<li>The observations <span class="math inline">\(Y_i\)</span> are conditionally independent of each other given the covariates <span class="math inline">\(X_i\)</span></li>
+</ol>
+<p><strong>Steps</strong></p>
+<ol type="1">
+<li>Fit model (consider interactions, non-linear patterns seen in EDA, confounding variables, transformations)<br>
+</li>
+<li>Partial residual analysis to account for any remaining non-linearity with log-odds, adjusting the model as needed [diagnostic for non-linearity between log-odds and regressors]<br>
+</li>
+<li>Plot randomized quantile residuals and corresponding Q-Q plot (with uniform distribution) for each predictor [second diagnostic for non-linearity between log-odds and regressors]<br>
+</li>
+<li>Optionally, create a calibration plot and randomized quantile residuals against fitted values<br>
+</li>
+<li>Check for how outliers identified during EDA impact on coefficients via Cook’s Distance<br>
+</li>
+<li>Check for collinearity issues using EDA and VIF scores<br>
+</li>
+<li>If we included spline or polynomial terms, conduct a deviance test and create effect plots, with example interpretations that include confidence intervals (<em>ensure it is on response scale, i.e., not log-odds</em>)<br>
+</li>
+<li>Otherwise, for linear terms, conduct a Wald test and provide test statistic (<span class="math inline">\(z\)</span>), p-value, and confidence interval (<em>exponentiate!</em>)<br>
+</li>
+<li>If sample size is small, make a statement about power<br>
+</li>
+<li>Limitations:
+<ul>
+<li>Unaccounted for correlation/repeated measures (lack of independence)</li>
+<li>Unmeasured confounders</li>
+<li>Dichotomized confounders</li>
+<li>Non-random missingness</li>
+<li>Sample demographics versus population of interest</li>
+<li>Statistical versus practical significance</li>
+<li>If cohort study think about which type: prospective, retrospective, case-control</li>
+</ul></li>
+</ol>
+</section>
+<section id="binomial-regression" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="binomial-regression"><span class="header-section-number">3</span> Binomial Regression</h2>
+<p>For the binomial regression model <span class="math inline">\(n_iY_i \mid X_i = x_i \sim \text{Binomial}(n_i, \log(\text{odds}(x_i\beta)))\)</span>. We use binomial regression when we have a fixed number of trials, with each observation consisting of a number of successes and total number of trials (so we can infer failures). In binomial regression, we have the following assumptions:<br>
+(1)The observations are conditionally independent given <span class="math inline">\(X\)</span><br>
+(2) The response variable follows a binomial distribution<br>
+(3) The mean of the response variable is related to the predictors through the logit link and functional form [We want a linear relationship between the predictor and the log-odds of the rate, <span class="math inline">\(Y_i\)</span>]:</p>
+<p><span class="math display">\[\log \left( \frac{rate}{1 - rate} \right)\]</span></p>
+<p><strong>Steps:</strong></p>
+<ol type="1">
+<li>Fit model (consider interactions, non-linear patterns seen in EDA, confounding variables, transformations)<br>
+</li>
+<li>Partial residual analysis to account for any remaining non-linearity with log-odds, adjusting the model as needed [diagnostic for non-linearity between log-odds and regressors]<br>
+</li>
+<li>Plot randomized quantile residuals and corresponding Q-Q plot (with uniform distribution) for each predictor [second diagnostic for non-linearity between log-odds and regressors]<br>
+</li>
+<li>Check for overdispersion using Q-Q plot from fitted. If there is evidence of overdispersion, move to <em>quasi-GLM section</em></li>
+<li>Check for how outliers identified during EDA impact on coefficients via Cook’s Distance<br>
+</li>
+<li>Check for collinearity issues using EDA and VIF scores<br>
+</li>
+<li>If we included spline or polynomial terms, conduct a deviance test and create effect plots, with example interpretations that include confidence intervals (<em>ensure it is on response scale, i.e., not log-odds</em>)</li>
+<li>Otherwise, for linear terms, conduct a Wald test and provide test statistic (<span class="math inline">\(z\)</span>), p-value, and confidence interval (<em>exponentiate!</em>)<br>
+</li>
+<li>If sample size is small, make a statement about power<br>
+</li>
+<li>Limitations:
+<ul>
+<li>Unaccounted for correlation (spatiotemporal), dependence of successive trials (e.g., success in one, increases probability of success in another)</li>
+<li>Unmeasured confounders</li>
+<li>Dichotomized confounders</li>
+<li>Non-random missingness</li>
+<li>Sample demographics versus population of interest</li>
+<li>Statistical versus practical significance</li>
+<li>If cohort study think about which type: prospective, retrospective, case-control</li>
+</ul></li>
+</ol>
+</section>
+<section id="poisson-regression" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="poisson-regression"><span class="header-section-number">4</span> Poisson Regression</h2>
+<p>When certain event that occurs with a fixed rate, and the events are independent (so that the occurrence of one event does not make another more or less likely), then the count of events over a fixed period of time will be Poisson-distributed. For the Poisson regression model <span class="math inline">\(\mathbb{E}[Y \mid X = x] = \exp(\beta^\intercal x)\)</span>, we have the following assumptions:</p>
+<p>(1)The observations are conditionally independent given <span class="math inline">\(X\)</span><br>
+(2) The response variable follows a Poisson distribution<br>
+(3) The mean of the response variable is related to the predictors through the log link and functional form [We want a linear relationship between the predictor and the log mean of the outcome, either rate or count]</p>
+<p><strong>Steps:</strong></p>
+<ol type="1">
+<li><p>Fit model (consider interactions, non-linear patterns seen in EDA, confounding variables, transformations)<br>
+(1b) Consider whether an offset is needed. Used in cases where the counts are from different time period lengths or popualtion sizes<br>
+</p></li>
+<li><p>Partial residual analysis to account for any remaining non-linearity with log mean outcome, adjusting the model as needed [diagnostic for non-linearity between log mean outcome and regressors]<br>
+</p></li>
+<li><p>Plot randomized quantile residuals and corresponding Q-Q plot (with uniform distribution) for each predictor [second diagnostic for non-linearity between log mean outcome and regressors]<br>
+</p></li>
+<li><p>Check for overdispersion using Q-Q plot from fitted. If there is evidence of overdispersion, move to <em>quasi-GLM section</em><br>
+</p></li>
+<li><p>Check for how outliers identified during EDA impact on coefficients via Cook’s Distance<br>
+</p></li>
+<li><p>Check for collinearity issues using EDA and VIF scores<br>
+</p></li>
+<li><p>If we included spline or polynomial terms, conduct a deviance test and create effect plots, with example interpretations that include confidence intervals (<em>ensure it is on response scale, i.e., not log scale</em>)</p></li>
+<li><p>Otherwise, for linear terms, conduct a Wald test and provide test statistic (<span class="math inline">\(z\)</span>), p-value, and confidence interval (<em>exponentiate!</em>)<br>
+</p></li>
+<li><p>If sample size is small, make a statement about power<br>
+</p></li>
+<li><p>Limitations:</p>
+<ul>
+<li>Unaccounted for correlation (spatiotemporal), dependence between events, and non-fixed rate of occurence</li>
+<li>Insufficient data to include an offset term</li>
+<li>Unreasonable approximation of count data as Poisson – could assign non-trivial probability to impossible counts</li>
+<li>Unmeasured confounders</li>
+<li>Dichotomized confounders</li>
+<li>Non-random missingness</li>
+<li>Sample demographics versus population of interest</li>
+<li>Statistical versus practical significance</li>
+<li>If cohort study think about which type: prospective, retrospective, case-control</li>
+</ul></li>
+</ol>
+</section>
+<section id="quasi-glm-regression" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="quasi-glm-regression"><span class="header-section-number">5</span> Quasi-GLM Regression</h2>
+<p>Quasi-GLM models are when there is overdispersion (or underdispersion) in the standard Binomial or Poisson regression model.</p>
+<p>Notably, overdispersion is when there is more variance in <span class="math inline">\(Y\)</span> than the response distribution would predict. This could be due to:</p>
+<ul>
+<li><p>Insufficient predictors. That is, there might be other factors associated with the expected value of <span class="math inline">\(Y\)</span> that we do not observe</p></li>
+<li><p>There might be correlations we did not account for (e.g., a binomial distribution assumes the <span class="math inline">\(n\)</span> trials are independent but what if success in one is correlated with increased success in the others?)</p></li>
 </ul>
-<p><em>Funded by Pomona College’s Evelyn B. Craddock McVicar Memorial Fund (Summer 2023) and the Kenneth Cooke Summer Research Fellowship (Summer 2024).</em></p>
+<p><strong>Steps:</strong></p>
+<ol type="1">
+<li>Fit the quasi-GLM model (using the regressors determined from the standard Binomial or Poisson regression model)<br>
+</li>
+<li>Confirm linear relationships/goodness-of-fit with partial residual plot (should be same to above with perhaps wider variance bands)<br>
+</li>
+<li>Based we no have a proper likelihood function, we cannot check our model with randomized quantile residuals</li>
+<li>Check for how outliers identified during EDA impact on coefficients via Cook’s Distance<br>
+</li>
+<li>Check for collinearity issues using EDA and VIF scores<br>
+</li>
+<li>If we included spline or polynomial terms, we can no longer conduct deviance tests. We can still use effect plots with example interpretations that include confidence intervals (<em>ensure it is on response scale, i.e., not log-odds or log scale</em>)</li>
+<li>Otherwise, for linear terms, conduct a Wald test and provide test statistic (<span class="math inline">\(z\)</span>), p-value, and confidence interval (<em>exponentiate!</em>); these coefficient estimates should be the same but the confidence interval should have a different width<br>
+</li>
+<li>If sample size is small, make a statement about power<br>
+</li>
+<li>Limitations:
+<ul>
+<li>Cannot test for significance of spline or polynomial terms</li>
+<li>Unaccounted for correlation (spatiotemporal), dependence of successive trials (e.g., success in one, increases probability of success in another), dependence between events, and non-fixed rate of occurence</li>
+<li>Insufficient data to include an offset term</li>
+<li>Unreasonable approximation of count data as Poisson – could assign non-trivial probability to impossible counts</li>
+<li>Unmeasured confounders</li>
+<li>Dichotomized confounders</li>
+<li>Non-random missingness</li>
+<li>Sample demographics versus population of interest</li>
+<li>Statistical versus practical significance</li>
+<li>If cohort study think about which type: prospective, retrospective, case-control</li>
+</ul></li>
+</ol>
+</section>
+<section id="prediction" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="prediction"><span class="header-section-number">6</span> Prediction</h2>
+<p>We want to use ridge regression for high-dimensional data, where we have highly collinear predictors (since it promites sharing effects) and lasso for high-dimensional data, where we want sparsity.</p>
+<p><strong>Steps:</strong></p>
+<ol type="1">
+<li>Split the data into test and training sets trying as much as possible to avoid data leakage (e.g., keep repeated measures together if possible)<br>
+</li>
+<li>Create model matrix of covariates for testing and training data<br>
+</li>
+<li>Cross validate to select penalization parameter <span class="math inline">\(\lambda\)</span> using the training data<br>
+</li>
+<li>Fit model on full training data using cross-validated penalization parameter – <em>make sure to specify the correct distribution family based on outcome. Note it is gaussian by default.</em><br>
+(4b) If doing classification, pick the threshold for positive versus negative class using ROC curve where it is closest to top left<br>
+</li>
+<li>Predict on the test data and calculate (R)MSE to assess overall predictive performance (<em>if binary compare accuracy to incidence rate</em>)<br>
+
+<ul>
+<li>RMSE: a measure of the average magnitude of the errors between predicted and actual values in a regression model<br>
+</li>
+</ul></li>
+<li>If classification, also compute sensitivity and specificity and/or AUC to show relative performance on positive and negative classes<br>
+</li>
+<li>If continuous outcome, plot actual versus predicted values (<em>ideal predictive model would like along slope = 1, intercept = 0 line</em>)</li>
+</ol>
 
 
-</main></div>
-    </div>
-  </div>
-</div>
- <!-- /main -->
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -192,6 +437,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

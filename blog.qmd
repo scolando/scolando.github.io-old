@@ -1,6 +1,6 @@
 ---
 title: "Notebooks"
-subtitle: "An ongoing list of notebooks on topics that interest me and a grab bag of other posts."
+subtitle: "An ongoing list of notebooks on statistics topics that interest me and a grab bag of other posts"
 ---
 
 

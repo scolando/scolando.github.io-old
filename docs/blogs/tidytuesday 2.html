@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Sara Colando, Jo Hardin">
-<meta name="dcterms.date" content="2024-10-01">
 
-<title>Sara Colando – Philosophy within Data Science Ethics Courses</title>
+<title>Sara Colando – TidyTuesday Creations</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,25 +20,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../personal-website-hex-sticker.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../personal-website-hex-sticker.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,10 +113,10 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../personal-website-hex-sticker.png" alt="" class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../personal-website-hex-sticker.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Sara Colando</span>
     </a>
   </div>
@@ -93,23 +127,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../research.html"> 
+    <a class="nav-link" href="../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../teaching.html"> 
+    <a class="nav-link" href="../teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../blog.html"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Notebooks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../cv.html"> 
+    <a class="nav-link" href="../cv.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
 </ul>
@@ -125,53 +159,163 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-solana column-body">
-  <div class="about-entity">
-    <div class="entity-contents">
-      <header id="title-block-header" class="quarto-title-block default">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Philosophy within Data Science Ethics Courses</h1>
+<h1 class="title">TidyTuesday Creations</h1>
+<p class="subtitle lead">a collection of my data visualizations and analyses</p>
 </div>
+
+
+
 <div class="quarto-title-meta">
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Sara Colando, Jo Hardin </p>
-          </div>
+
+    
+  
+    
   </div>
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">October 1, 2024</p>
-    </div>
-  </div>
-  </div>
-</header> <div class="about-links">
-  <a href="https://doi.org/10.1080/26939169.2024.2394542" class="about-link" rel="" target="">
-     <span class="about-link-text">Paper</span>
-  </a>
-  <a href="https://scolando.github.io/data-science-ethics/" class="about-link" rel="" target="">
-     <span class="about-link-text">Website</span>
-  </a>
-  <a href="https://github.com/scolando/data-science-ethics" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github Repo</span>
-  </a>
-</div>
-      <div class="about-contents"><main class="content" id="quarto-document-content">
-<p><img src="featured.png" class="img-fluid"></p>
-<p><strong>Overview</strong>: There is wide agreement that ethical considerations are a valuable aspect of a data science curriculum, and to that end, many data science programs offer courses in data science ethics. There are not always, however, explicit connections between data science ethics and the centuries-old work on ethics within the discipline of philosophy. Here, we present a framework for bringing together key data science practices with ethical topics. The ethical topics were collated from sixteen data science ethics courses with public-facing syllabi and reading lists. We encourage individuals who are teaching data science ethics to engage with the philosophical literature and its connection to current data science practices, which is rife with potentially morally charged decision points.</p>
-<ul>
-<li><strong>Colando, S.</strong>, &amp; Hardin, J. (2024). Philosophy within Data Science Ethics Courses. <em>Journal of Statistics and Data Science Education</em>, <em>32</em>(4), 361–373. <a href="https://doi.org/10.1080/26939169.2024.2394542" class="uri">https://doi.org/10.1080/26939169.2024.2394542</a></li>
-</ul>
-<p><em>Funded by Pomona College’s Evelyn B. Craddock McVicar Memorial Fund (Summer 2023) and the Kenneth Cooke Summer Research Fellowship (Summer 2024).</em></p>
+  
 
 
-</main></div>
-    </div>
-  </div>
+</header>
+
+
+<p>TidyTuesday is a weekly community activity put on the the <em>Data Science Learning Community</em>. I try to spend a little time each week creating a data visualization or model with the data posted to the official TidyTuesday GitHub Repository (linked below).</p>
+<hr>
+<div class="link">
+<section id="my-tidytuesday-creations" class="level4 link-header">
+<h4 class="anchored" data-anchor-id="my-tidytuesday-creations"><iconify-icon inline="" icon="octicon:link-16" aria-label="Icon link-16 from octicon Iconify.design set." title="Icon link-16 from octicon Iconify.design set."></iconify-icon> My TidyTuesday Creations</h4>
+</section>
+<div class="link-container">
+<p><a href="https://scolando.github.io/TidyTuesdayCreations/" target="_blank"></a><a href="https://scolando.github.io/TidyTuesdayCreations/" class="uri">https://scolando.github.io/TidyTuesdayCreations/</a></p>
 </div>
- <!-- /main -->
+</div>
+<div class="link">
+<section id="my-source-code" class="level4 link-header">
+<h4 class="anchored" data-anchor-id="my-source-code"><iconify-icon inline="" icon="devicon:github" aria-label="Icon github from devicon Iconify.design set." title="Icon github from devicon Iconify.design set."></iconify-icon> My Source Code</h4>
+</section>
+<div class="link-container">
+<p><a href="https://github.com/scolando/TidyTuesdayCreations" target="_blank">https://github.com/scolando/TidyTuesdayCreations</a></p>
+</div>
+</div>
+<div class="link">
+<section id="official-tidytuesday-repo" class="level4 link-header">
+<h4 class="anchored" data-anchor-id="official-tidytuesday-repo"><iconify-icon inline="" icon="devicon:github" aria-label="Icon github from devicon Iconify.design set." title="Icon github from devicon Iconify.design set."></iconify-icon> Official TidyTuesday Repo</h4>
+</section>
+<div class="link-container">
+<p><a href="https://github.com/rfordatascience/tidytuesday" target="_blank">https://github.com/rfordatascience/tidytuesday</a></p>
+</div>
+</div>
+<section id="highlighted-creations" class="level2">
+<h2 class="anchored" data-anchor-id="highlighted-creations">Highlighted Creations</h2>
+<p>Here are some of my favorite data visualizations that I have made from TidyTuesday over the past two years. Each title has a link to my code for creating the visualization.</p>
+<p><strong>05/07/2024: Demographics of the Rolling Stone’s Top 500 Albums of All Time in 2003 vs.&nbsp;2012 vs.&nbsp;2020</strong> <a href="https://scolando.github.io/TidyTuesdayCreations/rolling_stone.html"><iconify-icon inline="" icon="octicon:link-16" style="font-size: 0.875em;" aria-label="Icon link-16 from octicon Iconify.design set." title="Icon link-16 from octicon Iconify.design set."></iconify-icon></a></p>
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="tidytuesdays/rolling_stone.png" class="img-fluid quarto-figure quarto-figure-right figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+<p><strong>03/05/2024: The Mr.&nbsp;Trash Wheel Fleet’s Collected Garbage over the Years</strong> <a href="https://scolando.github.io/TidyTuesdayCreations/trash_collection.html"><iconify-icon inline="" icon="octicon:link-16" style="font-size: 0.875em;" aria-label="Icon link-16 from octicon Iconify.design set." title="Icon link-16 from octicon Iconify.design set."></iconify-icon></a></p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="tidytuesdays/mr_trash_wheel.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+<p><strong>11/28/2023: Dr.&nbsp;Who Distribution of Episode Rankings Based on the Episode Writer</strong> <a href="https://scolando.github.io/TidyTuesdayCreations/drwho.html"><iconify-icon inline="" icon="octicon:link-16" style="font-size: 0.875em;" aria-label="Icon link-16 from octicon Iconify.design set." title="Icon link-16 from octicon Iconify.design set."></iconify-icon></a></p>
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="tidytuesdays/doctor_who.png" class="img-fluid quarto-figure quarto-figure-right figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+<p><strong>10/24/2023: Difference between the Taylor’s Version and the Old Version of Songs from Fearless and Red</strong> <a href="https://scolando.github.io/TidyTuesdayCreations/TaylorSwift.html"><iconify-icon inline="" icon="octicon:link-16" style="font-size: 0.875em;" aria-label="Icon link-16 from octicon Iconify.design set." title="Icon link-16 from octicon Iconify.design set."></iconify-icon></a></p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="tidytuesdays/taylor_swift.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+<p><strong>03/21/2023: Coding Language Creation over the Years</strong> <a href="https://rpubs.com/scolando/Tidy-Tuesday-03-21-2023"><iconify-icon inline="" icon="octicon:link-16" style="font-size: 0.875em;" aria-label="Icon link-16 from octicon Iconify.design set." title="Icon link-16 from octicon Iconify.design set."></iconify-icon></a></p>
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="tidytuesdays/coding_languages.png" class="img-fluid quarto-figure quarto-figure-right figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+<p><strong>12/20/2022: Seattle Weather in 2021</strong> <a href="https://rpubs.com/scolando/Tidy-Tuesday-12-20-2022"><iconify-icon inline="" icon="octicon:link-16" style="font-size: 0.875em;" aria-label="Icon link-16 from octicon Iconify.design set." title="Icon link-16 from octicon Iconify.design set."></iconify-icon></a></p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="tidytuesdays/seattle_weather.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+<p><strong>07/05/2022: Changes in Median Rent Prices and Percent of Apartments by Neighborhood in San Francisco</strong> <a href="https://rpubs.com/scolando/Tidy-Tuesday-07-05-2022"><iconify-icon inline="" icon="octicon:link-16" style="font-size: 0.875em;" aria-label="Icon link-16 from octicon Iconify.design set." title="Icon link-16 from octicon Iconify.design set."></iconify-icon></a></p>
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="tidytuesdays/sf_rentals.png" class="img-fluid quarto-figure quarto-figure-right figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</section>
+<section id="helpful-resources" class="level2">
+<h2 class="anchored" data-anchor-id="helpful-resources">Helpful Resources</h2>
+<p>If you are interested in participating in TidyTuesday yourself, here are some resources that I have found helpful for starting:</p>
+<section id="finding-inspiration" class="level3">
+<h3 class="anchored" data-anchor-id="finding-inspiration">1. Finding Inspiration</h3>
+<p>When beginning TidyTuesdays, I find it super helpful to take inspiration from what others have done with the data either this week or in previous weeks. X (i.e., Twitter), Fossodon, and sometimes even Google searches are a great way of gaining inspiration from others!</p>
+<div class="link">
+<section id="search-tidytuesday-on-bluesky" class="level4 link-header">
+<h4 class="anchored" data-anchor-id="search-tidytuesday-on-bluesky"><iconify-icon inline="" icon="ri:bluesky-fill" aria-label="Icon bluesky-fill from ri Iconify.design set." title="Icon bluesky-fill from ri Iconify.design set."></iconify-icon> Search “#tidytuesday” on BlueSky</h4>
+</section>
+<div class="link-container">
+<p><a href="https://bsky.app/hashtag/TidyTuesday" target="_blank"></a><a href="https://bsky.app/hashtag/TidyTuesday" class="uri">https://bsky.app/hashtag/TidyTuesday</a></p>
+</div>
+</div>
+<div class="link">
+<section id="search-tidytuesday-on-mastodon" class="level4 link-header">
+<h4 class="anchored" data-anchor-id="search-tidytuesday-on-mastodon"><iconify-icon inline="" icon="simple-icons:mastodon" aria-label="Icon mastodon from simple-icons Iconify.design set." title="Icon mastodon from simple-icons Iconify.design set."></iconify-icon> Search “#tidytuesday” on Mastodon</h4>
+</section>
+<div class="link-container">
+<p><a href="https://fosstodon.org/tags/tidytuesday" target="_blank">https://fosstodon.org/tags/tidytuesday</a></p>
+</div>
+</div>
+</section>
+<section id="loading-in-the-data" class="level3">
+<h3 class="anchored" data-anchor-id="loading-in-the-data">2. Loading in the Data</h3>
+<p>Usually, I read the data into an .Rmd or .qmd file using a code block that looks like the following:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="in">dataset_1 &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/some_date/dataset_1.csv')</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="analyzing-and-visualizing-the-data" class="level3">
+<h3 class="anchored" data-anchor-id="analyzing-and-visualizing-the-data">3. Analyzing and Visualizing the Data</h3>
+<p>After that, the world (or, in this case, data) is your oyster! I primarily use Tidyverse to create my TidyTuesday data visualizations and models, so I appreciate the following cheat sheets:</p>
+<div class="link">
+<section id="stringr-cheat-sheet-pdf" class="level4 link-header">
+<h4 class="anchored" data-anchor-id="stringr-cheat-sheet-pdf"><iconify-icon inline="" icon="emojione-monotone:violin" aria-label="Icon violin from emojione-monotone Iconify.design set." title="Icon violin from emojione-monotone Iconify.design set."></iconify-icon> stringr Cheat Sheet PDF</h4>
+</section>
+<div class="link-container">
+<p><a href="https://rstudio.github.io/cheatsheets/strings.pdf" target="_blank">https://rstudio.github.io/cheatsheets/strings.pdf</a></p>
+</div>
+</div>
+<div class="link">
+<section id="dplyr-cheat-sheet-pdf" class="level4 link-header">
+<h4 class="anchored" data-anchor-id="dplyr-cheat-sheet-pdf"><iconify-icon inline="" icon="mdi:pliers" aria-label="Icon pliers from mdi Iconify.design set." title="Icon pliers from mdi Iconify.design set."></iconify-icon> dplyr Cheat Sheet PDF</h4>
+</section>
+<div class="link-container">
+<p><a href="https://rstudio.github.io/cheatsheets/data-transformation.pdf" target="_blank">https://rstudio.github.io/cheatsheets/data-transformation.pdf</a></p>
+</div>
+</div>
+<div class="link">
+<section id="ggplot2-cheat-sheet-pdf" class="level4 link-header">
+<h4 class="anchored" data-anchor-id="ggplot2-cheat-sheet-pdf"><iconify-icon inline="" icon="mdi-light:chart-line" aria-label="Icon chart-line from mdi-light Iconify.design set." title="Icon chart-line from mdi-light Iconify.design set."></iconify-icon> GGPlot2 Cheat Sheet PDF</h4>
+</section>
+<div class="link-container">
+<p><a href="https://rstudio.github.io/cheatsheets/data-visualization.pdf" target="_blank">https://rstudio.github.io/cheatsheets/data-visualization.pdf</a></p>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -192,6 +336,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

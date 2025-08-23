@@ -1,6 +1,6 @@
 ---
 title: "Curriculum Vitae"
-subtitle: "Last updated May 2025"
+subtitle: "Last updated August 2025"
 format:
   html:
     toc: true
@@ -8,7 +8,7 @@ format:
 css: cv.css
 ---
 
-{{< iconify teenyicons:pdf-outline size=l >}} <a href="Current_CV_May2025.pdf" target = "_blank"> <strong>Link to PDF Version of CV</strong></a>
+{{< iconify teenyicons:pdf-outline size=l >}} <a href="Current-CV-Aug2025.pdf" target = "_blank"> <strong>PDF Version of Sara Colando's CV</strong></a>
 
 ## Education
 
@@ -18,17 +18,21 @@ css: cv.css
 
 -   Graduated *magna cum laude* and with departmental honors (GPA: 3.99/4.00)
 
--   <a href="./research/chip-seq/Colando_MATH191_Thesis_Final_Draft.pdf" target = "_blank">Undergraduate Thesis</a>: Selecting ChIP-Seq Normalization Methods from the Perspective of their Technical Conditions, advised by Dr. Johanna Hardin (received excellent thesis designation by Mathematics and Statistics Department)
+## Publications and Papers
 
-## Publications and Manuscripts
+- **Peer-reviewed Articles**
 
-1.  **Colando, S.** & Hardin, J. Selecting ChIP-Seq Normalization Methods from the Perspective of their Technical Conditions. Revise and Resubmit, 2025.
+  1.  Colando, S., Schulz, D., Hardin, J. **Selecting ChIP-Seq Normalization Methods from the Perspective of their Technical Conditions**, *Briefings in Bioinformatics*, 2025. <https://doi.org/10.1093/bib/bbaf431>
 
-2.  **Colando, S.** & Hardin, J. (2024). Philosophy within Data Science Ethics Courses. *Journal of Statistics and Data Science Education*, *32*(4), 361–373. <https://doi.org/10.1080/26939169.2024.2394542>
+  2.  Colando, S. & Hardin, J. **Philosophy within Data Science Ethics Courses**, *Journal of Statistics and Data Science Education*, 2024. <https://doi.org/10.1080/26939169.2024.2394542>
+  
+- **In Progress**
+
+  1. Colando, S., Franke, E., Reinhart A., **Analyzing Statistics Students' Writing Before and After the Emergence of Large Language Models**. In progress.
 
 ## Research Experience
 
-**Pomona College Department of Mathematics and Statistics**<br>[Research Assistant to Dr. Johanna Hardin](https://scolando.github.io/research/chip-seq/chip-seq.html) [*May 2022 -- Aug 2024*]{.cvdate}
+**Pomona College Department of Mathematics and Statistics**<br>[Research Assistant to Dr. Johanna Hardin](https://scolando.github.io/research/chip-seq/chip-seq.html) [*May 2022 -- Aug 2025*]{.cvdate}
 
 -   Analyzed between-sample normalization techniques by their technical assumptions to improve differential binding analysis practices for ChIP-Seq and similarly structured types of high-throughput data
 -   Created reproducible ChIP-Seq read count simulations using R, Bash, and high-performance computing to examine how violating normalization method assumptions impacts the false discovery rate and power of identifying genomic regions with true differential DNA occupancy.
@@ -64,7 +68,8 @@ css: cv.css
 
 **Carnegie Mellon Department of Statistics and Data Science**<br> Graduate Teaching Assistant
 
--   Carnegie Mellon Sports Analytics Camp (Summer 2025)
+-   36-707: Regression Analysis (Fall 2025)
+-   Carnegie Mellon Sports Analytics Camp, *co-led four lectures* (Summer 2025)
 -   36-226: Introduction to Statistical Inference, *Head TA* (Spring 2025)
 -   36-600: Overview of Statistical Learning and Modeling (Fall 2024)
 
@@ -86,6 +91,10 @@ css: cv.css
 
 ## Presentations
 
+- **Colando, S.** & Franke, E., "Analyzing Statistics Students’ Writing Before and After the Emergence of
+Large Language Models" (poster), United States Conference on Teaching Statistics, July 2025
+- Franke, E. & **Colando, S.** "Teaching Data Cleaning and Wrangling with R’s data.table Package"
+(poster), United States Conference on Teaching Statistics, July 2025
 - **Colando, S.** "Predicting Avoidance Ties within Social Networks (ADA Progress Update)", Networkshop Research Group, Carnegie Mellon University, March 2025
 - **Colando, S.** & Franke E. "Computational Efficiency of R’s data.table Package", StatBytes, Carnegie Mellon University, March 2025
 -   **Colando, S.** & Hardin, J. "[Philosophy within Data Science Ethics Courses](https://causeweb.org/cause/webinar/jsdse/2024-10)", CAUSE Webinar Series, October 2024
@@ -100,11 +109,15 @@ css: cv.css
 
 ## Grants
 
-1. **Colando, S.** & Franke, E. Travel Grant  [*2025*]{.cvdate}\
+1. **Colando, S.** Graduate Student Fellowship [*2025-2027*]{.cvdate}\
+  Amount: \$6,000 per year \
+  Funder: Institute of Complex Social Dynamics, Carnegie Mellon University
+
+2. **Colando, S.** & Franke, E. Travel Grant  [*2025*]{.cvdate}\
   Amount: \$500 \
   Funder: StatBytes, Carnegie Mellon Department of Statistics and Data Science
 
-2. **Colando, S.** & Franke, E. data.table Ambassador Travel Grant [*2025*]{.cvdate} \
+3. **Colando, S.** & Franke, E. data.table Ambassador Travel Grant [*2025*]{.cvdate} \
   Amount: \$2,700 \
   Funder: National Science Foundation (Award Abstract: #2303612)
 
@@ -118,15 +131,11 @@ css: cv.css
 
 ## Honors and Awards
 
-- Distinction on First-Year Data Analysis Exam [*2025*]{.cvdate}
-    - Given by Statistics and Data Science Department, Carnegie Mellon University
--   Blair Nixon Award [*2024*]{.cvdate}
-    -   Given to a senior student who exemplifies the high ideals of the College in scholarship, sportsmanship, and organized athletic pursuits.
--   Bruce Jay Levy Senior Prize [*2024*]{.cvdate}
-    -   Given to a senior in the Mathematics and Statistics Department who throughout their time at Pomona has demonstrated a commitment to collaborative learning, fostering an inclusive mathematical community, and to expanding their own academic comfort zone.
--   W.T. Jones Prize in Philosophy [*2024*]{.cvdate}
-    -   In recognition of a senior philosophy major who has shown interest and talent in integrating philosophy with larger humanistic concerns (received for my work in data science ethics and contributions to Pomona's Philosophy Department).
--   Phi Beta Kappa, Pomona College [*2024*]{.cvdate}
--   Sigma Xi, Pomona College [*2024*]{.cvdate}
+- Passed First-Year PhD Data Analysis Exam with Distinction, Statistics and Data Science Department, Carnegie Mellon University [*2025*]{.cvdate}
+-   Blair Nixon Award, Pomona College [*2024*]{.cvdate}
+-   Bruce Jay Levy Senior Prize, Department of Mathematics and Statistics, Pomona College [*2024*]{.cvdate}
+-   W.T. Jones Prize in Philosophy, Department of Philosophy, Pomona College [*2024*]{.cvdate}
+-   Phi Beta Kappa, Southern California Chapter [*2024*]{.cvdate}
+-   Sigma Xi, Claremont Colleges Chapter [*2024*]{.cvdate}
 -   Pomona College Scholar [*2020 -- 2024*]{.cvdate}
--   Pomona College Women's Cross Country and Track and Field Varsity Letter Recipient [*2021 -- 2024*]{.cvdate}
+-   Cross Country and Track and Field Varsity Letter Recipient, Pomona-Pitzer Athletics [*2020 -- 2024*]{.cvdate}

@@ -1,7 +1,7 @@
 ---
 title: "Philosophy within Data Science Ethics Courses"
 author: Sara Colando, Jo Hardin
-date: May 2023
+date: October 2024
 about:
   template: solana
   links:

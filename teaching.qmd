@@ -9,18 +9,20 @@ I really enjoy teaching statistics and data science, particularly at the undergr
 
 ## Teaching Experience
 
-**Teaching Assistant:**
+**Graduate Teaching Assistant:**
 
-- *Carnegie Mellon Sports Analytics Camp*; co-taught four lectures to REU students (Summer 2025)
+- *36-707: Regression Analysis* (Fall 2025)
 
-- *36-226: Introduction to Statistical Inference*; Head TA (Spring 2025)
+- *Carnegie Mellon Sports Analytics Camp*, co-taught four lectures to REU students (Summer 2025)
+
+- *36-226: Introduction to Statistical Inference*, Head TA (Spring 2025)
 
 - *36-600: Overview of Statistical Learning and Modeling* (Fall 2024)
 
 ## Teaching-Related Research
 
-- *Analyzing Statistics Students' Writing Before and After the Emergence of Large Language Models*; more information on the project is available [here](research/student-llms/students-llms.qmd) (presented at the Research Satellite poster session during USCOTS 2025). 
+- [Analyzing Statistics Students' Writing Before and After the Emergence of Large Language Models](research/student-llms/students-llms.qmd); presented findings at the Research Satellite poster session during USCOTS 2025; manuscript in progress. 
 
-- *Teaching Data Cleaning and Wrangling with R’s data.table Package*; materials and efficacy results are available via [GitHub](https://github.com/efranke22/datatable_final_materials) (presented at Posters and Beyond during USCOTS 2025).
+- [Teaching Data Cleaning and Wrangling with R’s data.table Package](https://www.causeweb.org/cause/uscots/uscots25/program/posters/poster25); presented at Posters and Beyond during USCOTS 2025.
 
-- *Philosophy within Data Science Ethics Courses*; published in the Journal of Statistics and Data Science Education; the full paper is available is available [here](https://doi.org/10.1080/26939169.2024.2394542) (published October 2024).
+- [Philosophy within Data Science Ethics Courses](https://doi.org/10.1080/26939169.2024.2394542); published in the *Journal of Statistics and Data Science Education*, 2024.

@@ -1,12 +1,12 @@
 ---
 title: "Selecting ChIP-Seq Normalization Methods from the Perspective of their Technical Conditions"
-author: Sara Colando, Jo Hardin
-date: May 2022
+author: Sara Colando, Danae Schulz, Jo Hardin
+date: August 2025
 about:
   template: solana
   links:
-    - text: "ArXiv Pre-Print"
-      href: https://arxiv.org/abs/2501.02028
+    - text: "Paper"
+      href: https://academic.oup.com/bib/article/26/4/bbaf431/8239085
     - icon: github
       text: "Github Repo"
       href: https://github.com/scolando/ChIP-Seq-norm
@@ -14,8 +14,6 @@ about:
 
 ![](FTT-4-rep.png)
 
-**Overview:** Within the last two decades, high throughput sequencing has become one of the most popular methods for data generation within genomics, epigenomics, and transcriptomics. A popular method of high throughput sequencing is chromatin immunoprecipitation followed by high throughput sequencing, or ChIP-Seq. ChIP-Seq data provides vital insights into locations on the genome where there are differences in DNA occupancy between experimental states (i.e., differential DNA occupancy). However, since ChIP-Seq data is collected experimentally, it must be normalized to assess which genomic regions have differential DNA occupancy. While normalization is an essential step in identifying genomic regions with differential DNA occupancy, the primary technical conditions underlying ChIP-Seq normalization methods have yet to be specifically examined in the academic literature. In this thesis, we identify three primary technical conditions underlying ChIP-Seq between-sample normalization methods: (1) Symmetric Differential DNA Occupancy, (2) Equal Amount of Total DNA Occupancy across Experimental States, and (3) Equal Amount of Total Background Binding across Experimental States. We then categorize commonly-used ChIP-Seq normalization methods based on the technical conditions they use to normalize between experimental states. A major contribution of this thesis is our ChIP-Seq read count simulation results, which validate our categorization of the normalization methods by their technical conditions. We conclude by underscoring how our findings demonstrate that not all normalization methods are equally effective on all kinds of ChIP-Seq data. Rather, researchers should use their understanding of the ChIP-Seq experiment at hand to guide their choice of normalization method when possible or try mulitiple between-sample ChIP-Seq normalization methods to create a 'high-confidence' peakset which contains peaks that are less sensitive to one's choice of normalization method.
-
--   Senior Thesis PDF on <a href="Colando_MATH191_Thesis_Final_Draft.pdf" target = "_blank">Selecting ChIP-Seq Normalization Methods from the Perspective of their Technical Conditions</a>, advised by Jo Hardin.
+**Overview:** Chromatin immunoprecipitation with high-throughput sequencing (ChIP-seq) provides insights into both the genomic location occupied by the protein of interest and the difference in DNA occupancy between experimental states. Given that ChIP-seq data are collected experimentally, an important step for determining regions with differential DNA occupancy between states is between-sample normalization. While between-sample normalization is crucial for downstream differential binding analysis, the technical conditions underlying between-sample normalization methods have yet to be examined for ChIP-seq. We identify three important technical conditions underlying ChIP-seq between-sample normalization methods: balanced differential DNA occupancy, equal total DNA occupancy, and equal background binding across states. To illustrate the importance of satisfying the selected normalization method’s technical conditions for downstream differential binding analysis, we simulate ChIP-seq read count data where different combinations of the technical conditions are violated. We then externally verify our simulation results using experimental data. Based on our findings, we suggest that researchers use their understanding of the ChIP-seq experiment at hand to guide their choice of between-sample normalization method. Alternatively, researchers can use a high-confidence peakset, which is the intersection of the differentially bound peaksets obtained from using different between-sample normalization methods. In our two experimental analyses, roughly half of the called peaks were called as differentially bound for every normalization method. High-confidence peaks are less sensitive to one’s choice of between-sample normalization method, and thus could be a more robust basis for identifying genomic regions with differential DNA occupancy between experimental states when there is uncertainty about which technical conditions are satisfied.
 
 *Funded by Pomona College's The Class of 1971 Summer Undergraduate Research Fund (Summer 2022) and the Kenneth Cooke Summer Research Fellowship (Summer 2024).*
