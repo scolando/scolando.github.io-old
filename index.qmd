@@ -3,7 +3,7 @@ title: "Sara Colando"
 subtitle: "(she/her)"
 about:
   template: trestles
-  image: "images/Headshot.png"
+  image: "images/Headshot.jpg"
   image-shape: rounded
   links:
     - icon: github
