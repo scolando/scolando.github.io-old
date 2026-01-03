@@ -94,11 +94,11 @@
   </url>
   <url>
     <loc>https://scolando.github.io/personal-website/index.html</loc>
-    <lastmod>2025-08-23T20:57:28.488Z</lastmod>
+    <lastmod>2026-01-03T00:17:36.931Z</lastmod>
   </url>
   <url>
     <loc>https://scolando.github.io/personal-website/cv.html</loc>
-    <lastmod>2025-08-23T20:54:47.309Z</lastmod>
+    <lastmod>2025-12-19T17:00:37.508Z</lastmod>
   </url>
   <url>
     <loc>https://scolando.github.io/personal-website/blog.html</loc>
@@ -106,7 +106,7 @@
   </url>
   <url>
     <loc>https://scolando.github.io/personal-website/research.html</loc>
-    <lastmod>2025-08-23T21:06:54.142Z</lastmod>
+    <lastmod>2026-01-03T17:39:00.904Z</lastmod>
   </url>
   <url>
     <loc>https://scolando.github.io/personal-website/blogs/understanding-fairness-metrics.html</loc>
@@ -118,7 +118,7 @@
   </url>
   <url>
     <loc>https://scolando.github.io/personal-website/about.html</loc>
-    <lastmod>2025-08-24T15:39:22.157Z</lastmod>
+    <lastmod>2026-01-03T00:12:24.978Z</lastmod>
   </url>
   <url>
     <loc>https://scolando.github.io/personal-website/contact.html</loc>
@@ -134,15 +134,15 @@
   </url>
   <url>
     <loc>https://scolando.github.io/personal-website/blogs/DA-exam-materials.html</loc>
-    <lastmod>2025-07-30T17:05:03.707Z</lastmod>
+    <lastmod>2025-08-23T19:41:38.809Z</lastmod>
   </url>
   <url>
     <loc>https://scolando.github.io/personal-website/blogs/tidytuesday.html</loc>
-    <lastmod>2025-07-30T16:59:42.184Z</lastmod>
+    <lastmod>2025-08-23T19:41:38.820Z</lastmod>
   </url>
   <url>
     <loc>https://scolando.github.io/personal-website/research/student-llms/students-llms.html</loc>
-    <lastmod>2025-08-23T19:41:38.894Z</lastmod>
+    <lastmod>2026-01-03T18:05:07.009Z</lastmod>
   </url>
   <url>
     <loc>https://scolando.github.io/personal-website/research/chip-seq/chip-seq.html</loc>
@@ -154,7 +154,7 @@
   </url>
   <url>
     <loc>https://scolando.github.io/personal-website/teaching.html</loc>
-    <lastmod>2025-08-23T21:02:31.143Z</lastmod>
+    <lastmod>2026-01-03T00:27:00.989Z</lastmod>
   </url>
   <url>
     <loc>https://scolando.github.io/personal-website/blogs/DA-materials/model-types.html</loc>
@@ -191,5 +191,9 @@
   <url>
     <loc>https://scolando.github.io/personal-website/about 2.html</loc>
     <lastmod>2025-08-23T19:41:38.808Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scolando.github.io/personal-website/research/avoidance-ties/avoidance-ties.html</loc>
+    <lastmod>2026-01-03T18:01:47.352Z</lastmod>
   </url>
 </urlset>

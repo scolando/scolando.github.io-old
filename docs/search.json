@@ -25,7 +25,7 @@
     "href": "cv.html#education",
     "title": "Curriculum Vitae",
     "section": "Education",
-    "text": "Education\nPhD in Statistics 2024 – 2029 (Expected)Carnegie Mellon University, Pittsburgh, PA\nBA in Mathematics and Philosophy May 2024Pomona College, Claremont, CA\n\nGraduated magna cum laude and with departmental honors (GPA: 3.99/4.00)"
+    "text": "Education\nPhD in Statistics 2024 – 2029 (Expected)Carnegie Mellon University, Pittsburgh, PA\nBA in Mathematics and Philosophy May 2024Pomona College, Claremont, CA\n\nGraduated magna cum laude (GPA: 3.99/4.00) and with departmental honors"
   },
   {
     "objectID": "cv.html#publications",
@@ -81,7 +81,7 @@
     "href": "index.html",
     "title": "Sara Colando",
     "section": "",
-    "text": "Hi, and welcome to my website!\nI am a PhD student in the Department of Statistics and Data Science at Carnegie Mellon University. I graduated magna cum laude from Pomona College in Spring 2024 with a double major in Mathematics and Philosophy.\nLast spring, I started my Advanced Data Analysis project at Carnegie Mellon on explaining avoidance ties between classmates by leveraging features of the positive network between the same individuals in collaboration with Nynke Niezink and Eva Jaspers (Utrecht University). Previously, I have been involved in genomics research – investigating the technical conditions that underlie common ChIP-seq between-sample normalization methods with Jo Hardin (Pomona College) and Danae Schulz (Harvey Mudd College).\nI am also passionate about work at the intersection of statistics, data science, and philosophy, particularly related to data science ethics and (social) epistemology. Find out more about my interests and past experiences by browsing this site."
+    "text": "Hi, and welcome to my website!\nI am a Ph.D. student in the Department of Statistics and Data Science at Carnegie Mellon University. I graduated magna cum laude from Pomona College with a double major in Mathematics and Philosophy in Spring 2024.\nCurrently, I am working with Nynke Niezink and Eva Jaspers on a continuation of my Advanced Data Analysis project, titled “Why Do Students Avoid Each Other? Investigating Positive and Negative Network Effects.” I am also working on a project with Erin Franke and Alex Reinhart in which we analyze statistics students’ writing before and after the emergence of Large Language Models.” I have previously been involved in statistical genomics and data science ethics pedagogy research with Jo Hardin.\nFind out more about my interests and past experiences by browsing this site.\n  Curriculum Vitae"
   },
   {
     "objectID": "projects.html",
@@ -116,14 +116,14 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "I am a PhD student in Carnegie Mellon’s Statistics and Data Science department. In May 2024, I graduated magna cum laude from Pomona College with a double major in mathematics and philosophy. At Pomona, I primarily worked with Jo Hardin, conducting research in both statistical genomics and data science ethics pedagogy.\nOutside of research, I really enjoy teaching statistics and data science. This Fall, I will be the TA for 36-707: Regression Analysis, the introduction to regression and data analysis for first-year PhD students in Statistics & Data Science at Carnegie Mellon. Previously, I have been a TA for the Carnegie Mellon Sports Analytics Summer Camp where I co-led some early lectures on data analysis in R with my cohort-mate, Erin Franke, a Head TA for 36-226: Introduction to Statistical Inference, and a graduate TA for 36-600: Overview of Statistical Learning and Modeling. At Pomona, I served as a peer mentor for various mathematics and statistics courses, as well as a first-year writing course and an introductory genetics course.\nAnother primary interest of mine is philosophy, particularly (feminist) philosophy of science, ethics, and (social) epistemology. I hope to stay engaged in philosophy and, with that, work to better understand and grapple with the ethical dimensions of statistical technologies while completing my PhD."
+    "text": "I am a Ph.D. student in Carnegie Mellon’s Statistics and Data Science department. In May 2024, I graduated magna cum laude from Pomona College with a double major in mathematics and philosophy. Currently, I am working with Nynke Niezink and Eva Jaspers to study structural dependencies in classroom avoidance networks and how a student’s tendency to avoid others and be avoided relates to their position in the friendship network. At Pomona, I primarily worked with Jo Hardin, conducting research in both statistical genomics and data science ethics pedagogy. More information on my current and previous research projects can be found on my research page.\nOutside of research, I enjoy teaching statistics and data science. This Spring, I will be a TA for 36-402: Undergraduate Advanced Data Analysis, which is a capstone course for undergraduate students in CMU’s Statistics & Data Science department. A list of my previous teaching experiences and education-related research projects can be found on my teaching page.\nAnother primary interest of mine is philosophy, particularly (feminist) philosophy of science, ethics, and (social) epistemology. I hope to stay engaged in philosophy and, with that, work to better understand and grapple with the ethical dimensions of statistical technologies while completing my Ph.D. in Statistics."
   },
   {
     "objectID": "about.html#education",
     "href": "about.html#education",
     "title": "About",
     "section": "Education",
-    "text": "Education\n PhD in Statistics (in progress)\nCarnegie Mellon University\n BA in Mathematics and Philosophy (May 2024)\nPomona College"
+    "text": "Education\n Ph.D. in Statistics, Carnegie Mellon University, 2024-2029 (expected)\n BA in Mathematics and Philosophy, Pomona College, 2020-2024"
   },
   {
     "objectID": "about.html#contact",
@@ -494,7 +494,7 @@
     "href": "research/student-llms/students-llms.html",
     "title": "Analyzing Statistics Students’ Writing Before and After the Emergence of Large Language Models",
     "section": "",
-    "text": "Overview: The use of Large Language Models (LLMs) has become ubiquitous in academic settings, particularly in written assignments (Baek et al., 2024). Reinhart et al. (2025) identified systematic differences between human writing and LLMs by leveraging Biber feature and lemma usage rates.1 In this project, we investigate whether (and if so, how) students’ statistics writing has systematically shifted toward being more similar to LLM academic writing since LLMs became widely accessible in 2022. We compare student writing to LLM academic writing through two corpora. The HAP-E Corpus contains 1,227 documents for which ChatGPT-4o (August 2024) was asked to generate the next 500 words (in the same tone and style) when prompted with a piece of academic writing (Brown, 2024). Meanwhile, the Student Corpus contains 2,353 student reports from three undergraduate statistics courses at Carnegie Mellon University: 36-202, 36-401, and 36-402. 36-202: Methods for Statistics & Data Science is a lower division course, which is typically the second statistics course that students take. 36-401: Modern Regression and 36-402: Advanced Methods for Data Analysis are upper division courses that statistics majors take their junior or senior year. For the reports, students are given a dataset and asked to answer a domain question with a report in the IMRaD format.2 Ultimately, we find that there systematic shift in both the style and vocabulary of students’ statistics reports toward ChatGPT’s academic writing style in both lower and upper division courses at Carnegie Mellon since 2022. In particular, the writing style of students’ introductions and conclusions has become more similar to ChatGPT’s writing style, on average. We are currently in the progress of figuring out next steps for this project. For more details on our current results and potential next steps, see Erin’s write-up."
+    "text": "Overview: The use of Large Language Models (LLMs) has become ubiquitous in academic settings, particularly in written assignments (Baek et al., 2024). Reinhart et al. (2025) has identified systematic differences between human writing and LLMs by leveraging Biber feature and lemma usage rates.1 In this project, we investigate whether (and if so, how) students’ statistics writing has systematically shifted toward being more similar to LLM academic writing since LLMs became widely accessible in 2022. We compare student writing to LLM academic writing through two corpora. The HAP-E Corpus contains 1,227 documents for which ChatGPT-4o (August 2024) was asked to generate the next 500 words (in the same tone and style) when prompted with a piece of academic writing (Brown, 2024). Meanwhile, the Student Corpus contains 2,353 student reports from three undergraduate statistics courses at Carnegie Mellon University: 36-202, 36-401, and 36-402. 36-202: Methods for Statistics & Data Science is a lower division course, which is typically the second statistics course that students take. 36-401: Modern Regression and 36-402: Advanced Methods for Data Analysis are upper division courses that statistics majors take their junior or senior year. For the reports, students are given a dataset and asked to answer a domain question with a report in the IMRaD format.2 We find that there systematic shift in both the style and vocabulary of students’ statistics reports toward ChatGPT’s academic writing style in both lower and upper division courses at Carnegie Mellon since 2022. In particular, the writing style of students’ introductions and conclusions has become more similar to ChatGPT’s writing style, on average.\nWe are currently in the progress of figuring out next steps for this project. For more details on our current results and potential next steps, see Erin’s write-up."
   },
   {
     "objectID": "research/student-llms/students-llms.html#footnotes",
@@ -508,7 +508,7 @@
     "href": "teaching.html",
     "title": "Teaching",
     "section": "",
-    "text": "I really enjoy teaching statistics and data science, particularly at the undergraduate level. Additionally, I am fortunate to be involved in research related to statistics pedagogy, with a special focus on teaching statistics and data science in the era of big data and generative AI."
+    "text": "I really enjoy teaching statistics and data science, particularly at the undergraduate level. I am also involved in research related to statistics and data science education, with a special focus on pedagogy in the age of big data and generative AI."
   },
   {
     "objectID": "teaching.html#teaching-experiences",
@@ -529,7 +529,7 @@
     "href": "teaching.html#teaching-experience",
     "title": "Teaching",
     "section": "Teaching Experience",
-    "text": "Teaching Experience\nGraduate Teaching Assistant:\n\n36-707: Regression Analysis (Fall 2025)\nCarnegie Mellon Sports Analytics Camp, co-taught four lectures to REU students (Summer 2025)\n36-226: Introduction to Statistical Inference, Head TA (Spring 2025)\n36-600: Overview of Statistical Learning and Modeling (Fall 2024)"
+    "text": "Teaching Experience\nAs a Graduate Teaching Assistant at Carnegie Mellon University:\n\n36-402: Undergraduate Advanced Data Analysis (Spring 2026)\n36-707: Regression Analysis, guest lectured on penalized regression (Fall 2025)\nCarnegie Mellon Sports Analytics Camp, co-taught four lectures to REU students (Summer 2025)\n36-226: Introduction to Statistical Inference, Head TA (Spring 2025)\n36-600: Overview of Statistical Learning and Modeling (Fall 2024)\n\nAs a Undergraduate Teaching Assistant at Pomona College:\n\nMATH158: Statistical Linear Models (Spring 2024)\nMATH058B: Introduction to Biostatistics (Spring 2023)\nID001: First-Year Interdisciplinary Seminar: I Disagree (Fall 2023)\nBIOL040: Introductory Genetics with Lab (Fall 2022)\nMATH060: Linear Algebra (Fall 2021)\n1-2-1 Summer Bridge Program (Summer 2021)"
   },
   {
     "objectID": "blogs/DA-exam-materials.html",
@@ -1062,5 +1062,19 @@
     "title": "About",
     "section": "Contact",
     "text": "Contact\n scolando@andrew.cmu.edu"
+  },
+  {
+    "objectID": "teaching.html#education-related-research",
+    "href": "teaching.html#education-related-research",
+    "title": "Teaching",
+    "section": "Education-Related Research",
+    "text": "Education-Related Research\n\nAnalyzing Statistics Students’ Writing Before and After the Emergence of Large Language Models. Joint work with Erin Franke and Alex Reinhart. Presented work at the Research Satellite poster session during the United States Conference on Teaching Statistics, July 2025. We are currently working on the paper!\nTeaching Data Cleaning and Wrangling with R’s data.table Package. Joint work with Erin Franke. Presented at Posters and Beyond during United States Conference on Teaching Statistics, July 2025.\nPhilosophy within Data Science Ethics Courses. Joint work with Jo Hardin. Published in the Journal of Statistics and Data Science Education, 32(4), 2024."
+  },
+  {
+    "objectID": "research/avoidance-ties/avoidance-ties.html",
+    "href": "research/avoidance-ties/avoidance-ties.html",
+    "title": "Why Do Students Avoid Each Other? Investigating Positive and Negative Network Effects",
+    "section": "",
+    "text": "Overview: Negative ties can greatly influence both positive network dynamics and the formation of beliefs and behaviors in social networks. Examples of negative ties include avoidance, dislike, bullying, and aggression. While there is a broad literature on bullying, less is known about what drives people in a group to avoid each other. Yet, avoidance is a particularly interesting type of relation, since it is often more frequent and less socially complex than aggression or bullying. In this project, we study structural dependencies in classroom avoidance networks and how a student’s tendency to avoid others and be avoided relates to their position in the friendship network using data from 193 Dutch classrooms. Fitting an exponential random graph model (ERGM), we find that avoidance networks are highly associated with friendship networks and exhibit strong reciprocity and degree-related endogenous effects. Finally, our conclusions based on the average marginal effects of ERGM parameters do not differ substantively from those based on the original ERGM parameter estimates, contrary to previous findings.\nWe are currently working to account for the heterogeneity in the structure of classroom avoidance networks in our dataset by using a Bayesian hierarchical ERGM, which allows each classroom to have its own ERGM parameters that deviate from the population-level parameters."
   }
 ]

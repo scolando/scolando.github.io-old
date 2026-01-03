@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Sara Colando, Erin Franke, Alex Reinhart">
-<meta name="dcterms.date" content="2025-07-01">
+<meta name="author" content="Sara Colando, Nynke Niezink, Eva Jaspers">
+<meta name="dcterms.date" content="2025-12-01">
 
-<title>Sara Colando – Analyzing Statistics Students’ Writing Before and After the Emergence of Large Language Models</title>
+<title>Sara Colando – Why Do Students Avoid Each Other? Investigating Positive and Negative Network Effects</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,27 +22,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -146,54 +126,34 @@ div.csl-indent {
     <div class="entity-contents">
       <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Analyzing Statistics Students’ Writing Before and After the Emergence of Large Language Models</h1>
+<h1 class="title">Why Do Students Avoid Each Other? Investigating Positive and Negative Network Effects</h1>
 </div>
 <div class="quarto-title-meta">
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Sara Colando, Erin Franke, Alex Reinhart </p>
+             <p>Sara Colando, Nynke Niezink, Eva Jaspers </p>
           </div>
   </div>
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 1, 2025</p>
+      <p class="date">December 1, 2025</p>
     </div>
   </div>
   </div>
-</header> 
+</header> <div class="about-links">
+  <a href="/Colando-ADA-report-final.pdf" class="about-link" rel="" target="">
+     <span class="about-link-text">Advanced Data Analysis Report (PDF)</span>
+  </a>
+</div>
       <div class="about-contents"><main class="content" id="quarto-document-content">
-<p><img src="yearly.png" class="img-fluid"></p>
-<p><strong>Overview:</strong> The use of Large Language Models (LLMs) has become ubiquitous in academic settings, particularly in written assignments <span class="citation" data-cites="Baek2024">(<a href="#ref-Baek2024" role="doc-biblioref">Baek et al., 2024</a>)</span>. <span class="citation" data-cites="Reinhart2025">Reinhart et al. (<a href="#ref-Reinhart2025" role="doc-biblioref">2025</a>)</span> has identified systematic differences between human writing and LLMs by leveraging Biber feature and lemma usage rates.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> In this project, we investigate whether (and if so, how) students’ statistics writing has systematically shifted toward being more similar to LLM academic writing since LLMs became widely accessible in 2022. We compare student writing to LLM academic writing through two corpora. The <em>HAP-E Corpus</em> contains 1,227 documents for which ChatGPT-4o (August 2024) was asked to generate the next 500 words (in the same tone and style) when prompted with a piece of academic writing <span class="citation" data-cites="Brown2024">(<a href="#ref-Brown2024" role="doc-biblioref">Brown, 2024</a>)</span>. Meanwhile, the <em>Student Corpus</em> contains 2,353 student reports from three undergraduate statistics courses at Carnegie Mellon University: <em>36-202</em>, <em>36-401</em>, and <em>36-402</em>. <em>36-202: Methods for Statistics &amp; Data Science</em> is a lower division course, which is typically the second statistics course that students take. <em>36-401: Modern Regression</em> and <em>36-402: Advanced Methods for Data Analysis</em> are upper division courses that statistics majors take their junior or senior year. For the reports, students are given a dataset and asked to answer a domain question with a report in the IMRaD format.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> We find that there systematic shift in both the style and vocabulary of students’ statistics reports toward ChatGPT’s academic writing style in both lower and upper division courses at Carnegie Mellon since 2022. In particular, the writing style of students’ introductions and conclusions has become more similar to ChatGPT’s writing style, on average.</p>
-<p><em>We are currently in the progress of figuring out next steps for this project. For more details on our current results and potential next steps, see <a href="https://efranke22.github.io/teaching/llmwriting/llmwriting.html">Erin’s write-up</a>.</em></p>
-<ul>
-<li>USCOTS Research Satellite Presentation on <a href="https://www.causeweb.org/cause/uscots/uscots25/research/posters/8" target="_blank">Analyzing Statistics Students’ Writing Before and After the Emergence of Large Language Models</a>, co-presented with Erin Franke, as part of the TeachStat research group and Carnegie Mellon University.</li>
-</ul>
+<p><img src="degree-dist-avoidance.png" class="img-fluid"></p>
+<p><strong>Overview:</strong> Negative ties can greatly influence both positive network dynamics and the formation of beliefs and behaviors in social networks. Examples of negative ties include avoidance, dislike, bullying, and aggression. While there is a broad literature on bullying, less is known about what drives people in a group to avoid each other. Yet, avoidance is a particularly interesting type of relation, since it is often more frequent and less socially complex than aggression or bullying. In this project, we study structural dependencies in classroom avoidance networks and how a student’s tendency to avoid others and be avoided relates to their position in the friendship network using data from 193 Dutch classrooms. Fitting an exponential random graph model (ERGM), we find that avoidance networks are highly associated with friendship networks and exhibit strong reciprocity and degree-related endogenous effects. Finally, our conclusions based on the average marginal effects of ERGM parameters do not differ substantively from those based on the original ERGM parameter estimates, contrary to previous findings.</p>
+<p><em>We are currently working to account for the heterogeneity in the structure of classroom avoidance networks in our dataset by using a Bayesian hierarchical ERGM, which allows each classroom to have its own ERGM parameters that deviate from the population-level parameters.</em></p>
 
 
-
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
-<div id="ref-Baek2024" class="csl-entry" role="listitem">
-Baek, C., Tate, T., &amp; Warschauer, M. (2024). <span>“ChatGPT seems too good to be true”</span>: College students’ use and perceptions of generative AI. <em>Computers and Education: Artificial Intelligence</em>, <em>7</em>, 100294. <a href="https://doi.org/10.1016/j.caeai.2024.100294">https://doi.org/10.1016/j.caeai.2024.100294</a>
-</div>
-<div id="ref-Biber1988" class="csl-entry" role="listitem">
-Biber, D. (1988). <em>Variation across speech and writing</em>. Cambridge University Press. <a href="https://doi.org/10.1017/cbo9780511621024">https://doi.org/10.1017/cbo9780511621024</a>
-</div>
-<div id="ref-Brown2024" class="csl-entry" role="listitem">
-Brown, D. (2024). Browndw/human-ai-parallel-corpus · datasets at hugging face. In <em>browndw/human-ai-parallel-corpus · Datasets at Hugging Face</em>. <a href="https://huggingface.co/datasets/browndw/human-ai-parallel-corpus">https://huggingface.co/datasets/browndw/human-ai-parallel-corpus</a>
-</div>
-<div id="ref-Reinhart2025" class="csl-entry" role="listitem">
-Reinhart, A., Markey, B., Laudenbach, M., Pantusen, K., Yurko, R., Weinberg, G., &amp; Brown, D. W. (2025). Do LLMs write like humans? Variation in grammatical and rhetorical styles. <em>Proceedings of the National Academy of Sciences</em>, <em>122</em>(8). <a href="https://doi.org/10.1073/pnas.2422455122">https://doi.org/10.1073/pnas.2422455122</a>
-</div>
-</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>Biber features are a set of 67 rhetorical features (e.g., frequency of past tense, participial clauses, mean word length) used to characterize texts <span class="citation" data-cites="Biber1988">(<a href="#ref-Biber1988" role="doc-biblioref">Biber, 1988</a>)</span>. Lemmas are the “root” form of a word (e.g.&nbsp;<em>ensure</em>, <em>ensured</em>, and <em>ensures</em> all share the same lemma of <em>ensure</em>).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>IMRaD stands for Introduction, Methods, Results, and Discussion. Generally, students are also asked to write a one-page executive summary which is analogous to an abstract in academic writing.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main></div>
+</main></div>
     </div>
   </div>
 </div>

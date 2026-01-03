@@ -2,6 +2,7 @@
   {
     "listing": "/research.html",
     "items": [
+      "/research/avoidance-ties/avoidance-ties.html",
       "/research/chip-seq/chip-seq.html",
       "/research/student-llms/students-llms.html",
       "/research/data-ethics/data-ethics.html",
