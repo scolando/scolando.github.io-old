@@ -1,7 +1,0 @@
----
-title: "Contact"
----
-
-## Email
-
-skca2020\@mymail.pomona.edu
