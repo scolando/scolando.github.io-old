@@ -16,7 +16,7 @@ Another primary interest of mine is philosophy, particularly (feminist) philosop
 
 {{< iconify zondicons:education size=l >}} Ph.D. in Statistics, Carnegie Mellon University, 2024-2029 *(expected)*
 
-{{< iconify zondicons:education size=l >}} BA in Mathematics and Philosophy, Pomona College, 2020-2024
+{{< iconify zondicons:education size=l >}} B.A. in Mathematics and Philosophy, Pomona College, 2020-2024
 
 ## Contact
 
