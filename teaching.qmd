@@ -1,11 +1,10 @@
 ---
 title: "Teaching"
+subtitle: I really enjoy teaching statistics and data science, particularly at the undergraduate level. I am also involved in research related to statistics and data science education, with a special focus on pedagogy in the age of big data and generative AI.
 format:
   html:
     toc: false
 ---
-
-I really enjoy teaching statistics and data science, particularly at the undergraduate level. I am also involved in research related to statistics and data science education, with a special focus on pedagogy in the age of big data and generative AI.
 
 ## Teaching Experience
 
