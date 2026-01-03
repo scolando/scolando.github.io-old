@@ -5,24 +5,40 @@ format:
     toc: false
 ---
 
-I really enjoy teaching statistics and data science, particularly at the undergraduate level. Additionally, I am fortunate to be involved in research related to statistics pedagogy, with a special focus on teaching statistics and data science in the era of big data and generative AI.
+I really enjoy teaching statistics and data science, particularly at the undergraduate level. I am also involved in research related to statistics and data science education, with a special focus on pedagogy in the age of big data and generative AI.
 
 ## Teaching Experience
 
-**Graduate Teaching Assistant:**
+**As a Graduate Teaching Assistant at Carnegie Mellon University:**
 
-- *36-707: Regression Analysis* (Fall 2025)
+- 36-402: Undergraduate Advanced Data Analysis (Spring 2026)
 
-- *Carnegie Mellon Sports Analytics Camp*, co-taught four lectures to REU students (Summer 2025)
+- 36-707: Regression Analysis, *guest lectured on penalized regression* (Fall 2025)
 
-- *36-226: Introduction to Statistical Inference*, Head TA (Spring 2025)
+- Carnegie Mellon Sports Analytics Camp, *co-taught four lectures to REU students* (Summer 2025)
 
-- *36-600: Overview of Statistical Learning and Modeling* (Fall 2024)
+- 36-226: Introduction to Statistical Inference, *Head TA* (Spring 2025)
 
-## Teaching-Related Research
+- 36-600: Overview of Statistical Learning and Modeling (Fall 2024)
 
-- [Analyzing Statistics Students' Writing Before and After the Emergence of Large Language Models](research/student-llms/students-llms.qmd); presented findings at the Research Satellite poster session during USCOTS 2025; manuscript in progress. 
+**As a Undergraduate Teaching Assistant at Pomona College:**
 
-- [Teaching Data Cleaning and Wrangling with R’s data.table Package](https://www.causeweb.org/cause/uscots/uscots25/program/posters/poster25); presented at Posters and Beyond during USCOTS 2025.
+- MATH158: Statistical Linear Models (Spring 2024)
 
-- [Philosophy within Data Science Ethics Courses](https://doi.org/10.1080/26939169.2024.2394542); published in the *Journal of Statistics and Data Science Education*, 2024.
+- MATH058B: Introduction to Biostatistics (Spring 2023)
+
+- ID001: First-Year Interdisciplinary Seminar: I Disagree (Fall 2023)
+
+- BIOL040: Introductory Genetics with Lab (Fall 2022)
+
+- MATH060: Linear Algebra (Fall 2021)
+
+- [1-2-1 Summer Bridge Program](https://www.pomona.edu/administration/quantitative-skills-center/math-1-2-1) (Summer 2021)
+
+## Education-Related Research
+
+- [Analyzing Statistics Students' Writing Before and After the Emergence of Large Language Models](research/student-llms/students-llms.qmd). Joint work with Erin Franke and Alex Reinhart. Presented work at the Research Satellite poster session during the United States Conference on Teaching Statistics, July 2025. We are currently working on the paper!
+
+- [Teaching Data Cleaning and Wrangling with R’s data.table Package](https://www.causeweb.org/cause/uscots/uscots25/program/posters/poster25). Joint work with Erin Franke. Presented at Posters and Beyond during United States Conference on Teaching Statistics, July 2025.
+
+- [Philosophy within Data Science Ethics Courses](https://doi.org/10.1080/26939169.2024.2394542). Joint work with Jo Hardin. Published in the *Journal of Statistics and Data Science Education*, *32*(4), 2024.

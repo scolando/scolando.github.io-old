@@ -23,14 +23,13 @@ website:
         text: "Teaching"
       - href: blog.qmd
         text: "Notebooks"
-      - href: cv.qmd
-        text: "CV"
     
   page-footer:
-    left: "Sara Colando, 2024"
+    left:
+      - text: "&copy; Copyright 2025, Sara Colando"
     right:
       - icon: github
-        href: https://github.com/scolando/personal-website
+        href: https://github.com/scolando/scolando.github.io
         aria-label: "Quarto GitHub"
     background: "#f6f5f2"
 

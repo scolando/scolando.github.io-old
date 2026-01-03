@@ -1,6 +1,6 @@
 ---
 title: "Research"
-subtitle: Some of my current and recent research projects
+subtitle: Some of my current and recent research projects.
 format:
   html:
     toc: false

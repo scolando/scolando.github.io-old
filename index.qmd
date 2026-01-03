@@ -3,7 +3,7 @@ title: "Sara Colando"
 subtitle: "(she/her)"
 about:
   template: trestles
-  image: "images/Headshot4.png"
+  image: "images/Headshot.png"
   image-shape: rounded
   links:
     - icon: github
@@ -20,9 +20,16 @@ theme: styles.scss
 
 Hi, and welcome to my website!
 
-I am a PhD student in the Department of Statistics and Data Science at Carnegie Mellon University. I graduated *magna cum laude* from Pomona College in Spring 2024 with a double major in Mathematics and Philosophy.
+I am a Ph.D. student in the Department of Statistics and Data Science at Carnegie Mellon University. I graduated magna cum laude from Pomona College with a double major in Mathematics and Philosophy in Spring 2024.
 
-Last spring, I started my Advanced Data Analysis project at Carnegie Mellon on explaining avoidance ties between classmates by leveraging features of the positive network between the same individuals in collaboration with [Nynke Niezink](https://www.stat.cmu.edu/~nynke/) and Eva Jaspers (Utrecht University). Previously, I have been involved in genomics research -- investigating the technical conditions that underlie common ChIP-seq between-sample normalization methods with [Jo Hardin](https://hardin47.netlify.app) (Pomona College) and Danae Schulz (Harvey Mudd College).
+Currently, I am working with [Nynke Niezink](https://www.stat.cmu.edu/~nynke/) and [Eva Jaspers](https://www.uu.nl/staff/EJaspers) on a continuation of my Advanced Data Analysis project, titled "Why Do Students Avoid Each Other? Investigating Positive and Negative Network Effects." I am also working on a project with [Erin Franke](https://efranke22.github.io) and [Alex Reinhart](https://www.refsmmat.com) in which we analyze statistics students’ writing before and after the emergence of Large Language Models." I have previously been involved in statistical genomics and data science ethics pedagogy research with [Jo Hardin](https://hardin47.netlify.app). 
 
-I am also passionate about work at the intersection of statistics, data science, and philosophy, particularly related to data science ethics and (social) epistemology. Find out more about my interests and past experiences by browsing this site.
+Find out more about my interests and past experiences by browsing this site.
+
+{{< iconify teenyicons:pdf-outline size=l >}} <a href="Current-CV-Dec2025.pdf"
+   target="_blank"
+   style="color: black; text-decoration: none;">
+  <strong>Curriculum Vitae</strong>
+</a>
+
 
