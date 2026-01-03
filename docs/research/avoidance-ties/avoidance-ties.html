@@ -41,6 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -142,15 +143,12 @@ ul.task-list li input[type="checkbox"] {
     </div>
   </div>
   </div>
-</header> <div class="about-links">
-  <a href="/Colando-ADA-report-final.pdf" class="about-link" rel="" target="">
-     <span class="about-link-text">Advanced Data Analysis Report (PDF)</span>
-  </a>
-</div>
+</header> 
       <div class="about-contents"><main class="content" id="quarto-document-content">
 <p><img src="degree-dist-avoidance.png" class="img-fluid"></p>
 <p><strong>Overview:</strong> Negative ties can greatly influence both positive network dynamics and the formation of beliefs and behaviors in social networks. Examples of negative ties include avoidance, dislike, bullying, and aggression. While there is a broad literature on bullying, less is known about what drives people in a group to avoid each other. Yet, avoidance is a particularly interesting type of relation, since it is often more frequent and less socially complex than aggression or bullying. In this project, we study structural dependencies in classroom avoidance networks and how a student’s tendency to avoid others and be avoided relates to their position in the friendship network using data from 193 Dutch classrooms. Fitting an exponential random graph model (ERGM), we find that avoidance networks are highly associated with friendship networks and exhibit strong reciprocity and degree-related endogenous effects. Finally, our conclusions based on the average marginal effects of ERGM parameters do not differ substantively from those based on the original ERGM parameter estimates, contrary to previous findings.</p>
 <p><em>We are currently working to account for the heterogeneity in the structure of classroom avoidance networks in our dataset by using a Bayesian hierarchical ERGM, which allows each classroom to have its own ERGM parameters that deviate from the population-level parameters.</em></p>
+<p><iconify-icon inline="" icon="teenyicons:pdf-outline" style="font-size: l;" aria-label="Icon pdf-outline from teenyicons Iconify.design set." title="Icon pdf-outline from teenyicons Iconify.design set."></iconify-icon> <a href="Colando-ADA-report-final.pdf" target="_blank" style="color: black; text-decoration: none;"> <strong>Advanced Data Analysis Report (December 2025)</strong> </a></p>
 
 
 </main></div>
@@ -243,7 +241,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/scolando\.github\.io\/personal-website\/");
+      var filterRegex = new RegExp("https:\/\/scolando\.github\.io\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

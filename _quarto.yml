@@ -6,8 +6,8 @@ website:
   title: "Sara Colando"
   description: 'Sara Colando Website, CMU Statistics and Data Science PhD Student'
   favicon: "personal-website-hex-sticker.png"
-  site-url: https://scolando.github.io/personal-website/
-  repo-url: https://github.com/scolando/personal-website
+  site-url: https://scolando.github.io/
+  repo-url: https://github.com/scolando/scolando.github.io
   page-navigation: true
   
   
