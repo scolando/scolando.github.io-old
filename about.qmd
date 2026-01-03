@@ -10,7 +10,7 @@ I am a Ph.D. student in Carnegie Mellon's Statistics and Data Science department
  
 Outside of research, I enjoy teaching statistics and data science. This Spring, I will be a TA for 36-402: Undergraduate Advanced Data Analysis, which is a capstone course for undergraduate students in CMU's Statistics & Data Science department. A list of my previous teaching experiences and education-related research projects can be found on my [teaching page](teaching.qmd). 
 
-Another primary interest of mine is philosophy, particularly (feminist) philosophy of science, ethics, and (social) epistemology. I hope to stay engaged in philosophy and, with that, work to better understand and grapple with the ethical dimensions of statistical technologies while completing my Ph.D. in Statistics.
+Another primary interest of mine is philosophy, particularly (feminist) philosophy of science, ethics, and (social) epistemology. I hope to stay engaged in philosophy and, with that, work to better understand and grapple with the ethical dimensions of statistical technologies while completing my Ph.D. in Statistics. For more of my interests, check out my [notebooks page](blog.qmd). 
 
 ## Education
 
