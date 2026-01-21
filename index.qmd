@@ -32,4 +32,6 @@ Find out more about my interests and past experiences by browsing this site.
   <strong>Curriculum Vitae</strong>
 </a>
 
+[CV](CV.pdf)
+
 
